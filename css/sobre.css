@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-image: url(./assets/img/colheita.jpg);
+  background-image: url(assets/img/colheita.jpg);
   background-size: cover;
   background-position: 70%;
   object-fit: cover;

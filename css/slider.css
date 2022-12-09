@@ -1,0 +1,65 @@
+.sistema {
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.753);
+  position: relative;
+}
+
+.slider {
+  width: 73vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 0 0 15em;
+  text-align: center;
+  position: relative;
+}
+
+.slider--width {
+  height: 100%;
+  display: flex;
+  transition: all ease 2s;
+}
+
+.slider--item {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.controls {
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  width: 20px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  margin: 20px;
+  opacity: .7;
+}
+
+.control:hover {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+
+@media screen and (max-width: 991px) {
+  .slider {
+    width: 93vw;
+    height: 86vh;
+    margin: 3em auto;
+  }
+}
+

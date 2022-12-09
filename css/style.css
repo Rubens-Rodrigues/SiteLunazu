@@ -1,0 +1,102 @@
+@import url("topo.css");
+@import url("nav-bar.css");
+@import url("header.css");
+@import url("sobre.css");
+@import url("slider.css");
+@import url("beneficio.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+  transition: all ease 1s;
+  color: #fff;
+}
+
+body a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+main {
+  height: 100vh;
+  color: white;
+  background-color: black;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+#hr1 {
+  opacity: 0.3;
+  position: fixed;
+  z-index: 2;
+  width: 10px;
+  height: 100vh;
+  margin-left: 77em;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+#hr2 {
+  opacity: 0.3;
+  position: fixed;
+  z-index: 2;
+  width: 10px;
+  height: 100vh;
+  margin-left: 46em;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  
+}
+
+#hr3 {
+  opacity: 0.3;
+  position: fixed;
+  z-index: 2;
+  width: 10px;
+  height: 100vh;
+  margin-left: 15em;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+@media screen and (max-width: 991px) {
+  hr {
+    display: none;
+  }
+}
+
+/* Animação scroll*/
+
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="down"] {
+  transform: translate3d(0, -100%, 0);
+}
+[data-anime="up"] {
+  transform: translate3d(-100, 0, 0);
+}
+[data-anime="left"] {
+  transform: translate3d(-50%, 0, 0);
+}
+[data-anime="right"] {
+  transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+

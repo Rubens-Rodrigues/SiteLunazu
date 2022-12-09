@@ -1,0 +1,200 @@
+.sobre {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url(/assets/img/colheita.jpg);
+  background-size: cover;
+  background-position: 70%;
+  object-fit: cover;
+  z-index: 1;
+  display: flex;
+  animation: animeBackground 50s alternate infinite;
+}
+
+.content-sobre {
+  background-color: rgba(0, 0, 0, 0.397);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.description {
+  width: 73%;
+  height: 400px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: -7em;
+}
+
+.description .texto {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  gap: 10px;
+}
+.description p {
+  overflow: hidden;
+  letter-spacing: .1em;  
+}
+
+
+#btn-sobre {
+  margin-top: 1em;
+  width: 11em;
+  padding: 0.6em;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+#btn-sobre:hover {
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+.description h2 {
+  margin-top: -5em;
+  
+}
+
+.content-sobre ul {
+  width: 73%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: -7em;
+  overflow: hidden;
+}
+
+.content-sobre ul li {
+  height: 5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s;
+  border: .1em solid rgba(255, 255, 255, 0.26);
+}
+
+.content-sobre ul li:hover {
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+
+
+
+@media screen and (min-width: 1380px) {
+  .description {
+    padding: 0%;
+    width: 65%;
+    margin-left: -3em;
+  }
+  
+  .content-sobre ul {
+    width: 69%;
+    margin-right: -2em;
+  }  
+}
+
+@media screen and (max-width: 991px) {
+  .sobre {
+      animation: animeBackground 20s alternate infinite;
+  }
+  .content-sobre {
+    flex-direction: column-reverse;
+    width: 100vw;
+    padding-top: 5em;
+  }
+
+  .description {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1em;
+  }
+  
+  .description .texto {
+    width: 70%;
+    margin-top: 1em;
+  }
+
+  .description h2 {
+    margin: 0;
+  }
+  .content-sobre ul {
+    width: 100%;
+    align-items: none;
+    justify-content: none;
+    margin: 0;
+    padding: 1em;
+  }
+  
+.content-sobre ul li {
+  border: .1em solid rgba(255, 255, 255, 0.26);
+}
+}
+
+@media screen and (max-width: 500px) {
+  .sobre {
+      animation: animeBackground 100s alternate infinite;
+  }
+
+  .description {
+    margin-left: -5em;
+  }
+  
+  .description .texto {
+    width: 90%;
+    font-size: 0.8em;
+  }
+  .content-sobre ul {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .content-sobre ul li {
+    height: 50px;
+  }
+
+  .content-sobre ul :nth-child(3) {
+    width: 90%;
+  }
+  .content-sobre ul :nth-child(2) {
+    width: 80%;
+  }
+  .content-sobre ul :nth-child(1) {
+    width: 70%;
+  }
+
+  .content-sobre ul li {
+    width: 100%;
+  }
+}
+
+
+
+
+/* animação bacground sobre */
+@keyframes animeBackground {
+  0% {
+    background-position:  0, 0;
+  }
+  100% {
+    background-position: 100% 0, 100% 0;
+  }
+}
+

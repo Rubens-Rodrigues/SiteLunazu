@@ -1,0 +1,22 @@
+header {
+  position: fixed;
+  width: 100vw;
+  height: 8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+  z-index: 4;
+  }
+
+h1 {
+  height: 100%;
+  font-size: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  cursor: pointer;
+}
+
+
+

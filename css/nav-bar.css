@@ -1,0 +1,90 @@
+.navBar div {
+  width: 40px;
+  height: 1px;
+  background-color: #fff;
+  margin: 8px;
+  transition: .8s;
+}
+
+.navBar {
+  cursor: pointer;
+  height: 100%;
+  margin-right: 0.8em;
+}
+
+.navList {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 55vw;
+  height: 99vh;
+  background-color: rgba(14, 13, 13, 0.89);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.navList ul li {
+  margin-top: 2em;
+}
+
+.nav-List {
+  position: fixed;
+  width: auto;
+  height: 100vh;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-List ul {
+  list-style: none;
+  margin-left: 1.5em;
+  margin-top: 15em;
+}
+
+.nav-List ul li {
+  margin-top: 0.5em;
+}
+
+.nav-List ul a, .navList ul a {
+  letter-spacing: .1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: .7;
+  transition: all 0.5s;
+}
+
+.nav-List ul a:hover, .navList ul a:hover {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 991px) {
+  .navBar div {
+    display: block;
+  }
+  .nav-List li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  
+} 
+
+
+/* Nav Bar */
+.navList.active {
+  transform: translateX(0);
+}
+.navBar.active .line1 {
+  transform: rotate(-50deg) translate(-8px, 8px);
+}
+.navBar.active .line2 {
+  opacity: 0;
+}
+.navBar.active .line3 {
+  transform: rotate(50deg) translate(-4px, -5px);
+}

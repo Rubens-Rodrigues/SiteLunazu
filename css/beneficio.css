@@ -1,5 +1,8 @@
-.content-beneficios {
-  background-color: #fff;
+.beneficio {
+  background-color: rgb(226, 27, 27);
+  position: relative;
   height: 100vh;
   z-index: 1;
+  text-align: center;
 }
+

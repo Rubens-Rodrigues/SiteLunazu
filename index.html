@@ -11,11 +11,11 @@
 
 <body>
   <header>
-    <h1 data-anime="down"><a href="#topo">Lunazu</a></h1>
-    <div class="navBar">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
+    <h1 data-anime="down"><a id="logo" href="#topo">Lunazu</a></h1>
+    <div class="navBar mobile-menu">
+      <div id="line1" class="line1"></div>
+      <div id="line2" class="line2"></div>
+      <div id="line3" class="line3"></div>
     </div>
   </header>
   <hr id="hr1">
@@ -36,20 +36,20 @@
       </div>
       <div class="navList">
         <ul>
-          <li><a data-anime="right" href="#sobre">Sobre</a></li>
-          <li><a data-anime="right" href="#sistema">Nosso Sistema</a></li>
-          <li><a data-anime="right" href="#beneficio">Benefícios</a></li>
-          <li><a data-anime="right" href="#planos">Planos</a></li>
-          <li><a data-anime="right" href="#contato">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#sistema">Nosso Sistema</a></li>
+          <li><a href="#beneficio">Benefícios</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
-      <div class="nav-List">
+      <div class="nav-List desktop">
         <ul>
-          <li><a href="#sobre">&#8212; Sobre</a></li>
-          <li><a href="#sistema">&#8212; Nosso Sistema</a></li>
-          <li><a href="#beneficio">&#8212; Benefícios</a></li>
-          <li><a href="#planos">&#8212; Planos</a></li>
-          <li><a href="#contato">&#8212; Contato</a></li>
+          <li><a id="menu-one" href="#sobre">&#8212; Sobre</a></li>
+          <li><a id="menu-two" href="#sistema">&#8212; Nosso Sistema</a></li>
+          <li><a id="menu-three" href="#beneficio">&#8212; Benefícios</a></li>
+          <li><a id="menu-four" href="#planos">&#8212; Planos</a></li>
+          <li><a id="menu-five" href="#contato">&#8212; Contato</a></li>
         </ul>
       </div>
     </div>
@@ -60,7 +60,9 @@
       <div class="description">
         <h2 data-anime="left">Seu agro cada vez <br> mais Tech</h2>
         <div class="texto">
-          <p data-anime="right">Aqui você encontrará as melhores formas de gestão para sua fazenda. Não importa o setor e nem a demanda, aqui você encontra o meio mais efetivo pra controlar oq produz e, saber se isso está de acordo com as perspectivas de mercado. </p>
+          <p data-anime="right">Aqui você encontrará as melhores formas de gestão para sua fazenda. Não importa o setor
+            e nem a demanda, aqui você encontra o meio mais efetivo pra controlar oq produz e, saber se isso está de
+            acordo com as perspectivas de mercado. </p>
           <button data-anime="right" id="btn-sobre"><a href="#">Mais detalhes</a></button>
         </div>
       </div>
@@ -81,19 +83,71 @@
       </div>
       <h2 data-anime="left" style="position: absolute; padding: 20px; ">Nosso sistema</h2>
       <div class="slider--width">
-        <div class="slider--item" style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);" ></div>
-        <div class="slider--item" style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);" ></div>
-        <div class="slider--item" style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);" ></div>
-        <div class="slider--item" style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);" ></div>
+        <div class="slider--item"
+          style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);">
+        </div>
+        <div class="slider--item"
+          style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);">
+        </div>
+        <div class="slider--item"
+          style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);">
+        </div>
+        <div class="slider--item"
+          style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);">
+        </div>
       </div>
     </div>
   </section>
 
-  <section data-anime="up" id="beneficio" class="beneficio">
-   <h1>Beneficios</h1>
+  <section data-anime="up" id="beneficio" class="content-beneficio">
+    <div class="container-beneficios">BENEFICIOS</div>
   </section>
 
-  <main data-anime="up" id="planos">PLANOS</main>
+  <section data-anime="up" class="content-planos" id="planos">
+    <div class="container-planos">
+      <h2>PLANOS CERTOS PARA VOCÊ</h2>
+      <div class="planos">
+        <div class="plano plano1">
+          <h3>139,90</h3>
+          <P>Ate 300 <br>Animais</P>
+          <button><a href="#">CONTRATAR</a></button>
+        </div>
+        <div class="plano plano2">
+          <h3>179,90</h3>
+          <P>301 - 500<br>Animais</P>
+          <button><a href="#">CONTRATAR</a></button>
+        </div>
+        <div class="plano plano3">
+          <h3>320,90</h3>
+          <P>501 - 1000<br>Animais</P>
+          <button><a href="#">CONTRATAR</a></button>
+        </div>
+        <div class="plano plano4">
+          <h3>575,90</h3>
+          <P>1001 - 3000<br>Animais</P>
+          <button><a href="#">CONTRATAR</a></button>
+        </div>
+        <div class="plano plano5">
+          <h3 style="font-size: 13px;">CONSULTAR</h3>
+          <P>A partir de 3000<br>Animais</P>
+          <button><a href="#">CONTRATAR</a></button>
+        </div>
+      </div>
+      <ul>
+        <li><span style="color: green; font-size: 25px;">&#x2714;</span> Nos planos anuais não será cobrado taxa
+          de ativação*. Preços especiais para essa modalidade**</li>
+        <li><span style="color: green; font-size: 25px;">&#x2714;</span> Temos planos personalizado para fazendas
+          acima de 3000 animais</li>
+      </ul>
+      <div class="obs">
+        <p>*Taxa de ativação a consultar</p>
+        <p>**Valor referente a mensalidade, no plano anual os calores são alterados.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <main data-anime="up" id="contato">CONTATOS</main>
   <script src="./js/script.js"></script>
 </body>
 

@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-image: url(/assets/img/colheita.jpg);
+  background-image: url(../assets/img/colheita.jpg);
   background-size: cover;
   background-position: 70%;
   object-fit: cover;
@@ -40,6 +40,7 @@
 .description p {
   overflow: hidden;
   letter-spacing: .1em;  
+  color: #fff;
 }
 
 
@@ -83,6 +84,7 @@
   cursor: pointer;
   transition: all 1s;
   border: .1em solid rgba(255, 255, 255, 0.26);
+  color: #fff;
 }
 
 .content-sobre ul li:hover {

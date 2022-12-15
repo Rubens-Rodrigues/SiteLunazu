@@ -1,10 +1,10 @@
 // Nav bar
 class MobileNavbar {
-  constructor(navBar, navList, navLinks) {
-    this.navBar = document.querySelector(navBar);
+  constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
     this.navList = document.querySelector(navList);
-    this.navLinks = document.querySelector(navLinks);
-    this.actveClass = "active";
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
 
     this.handleClick = this.handleClick.bind(this);
   }
@@ -13,22 +13,22 @@ class MobileNavbar {
     this.navLinks.forEach((link, index) => {
       link.style.animation
         ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 0.3}s`);
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
     });
   }
 
   handleClick() {
-    this.navList.classList.toggle(this.actveClass);
-    this.navBar.classList.toggle(this.actveClass);
+    this.navList.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
     this.animateLinks();
   }
 
   addClickEvent() {
-    this.navBar.addEventListener("click", this.handleClick);
+    this.mobileMenu.addEventListener("click", this.handleClick);
   }
 
   init() {
-    if (this.navBar) {
+    if (this.mobileMenu) {
       this.addClickEvent();
     }
     return this;
@@ -36,9 +36,9 @@ class MobileNavbar {
 }
 
 const mobileNavbar = new MobileNavbar(
-  ".navBar",
+  ".mobile-menu",
   ".navList",
-  ".navList li",
+  ".navList li"
 );
 mobileNavbar.init()
 
@@ -96,6 +96,31 @@ function updateMargin() {
   document.querySelector(".slider--width").style.marginLeft = `-${newMargin}px`;
 }
 
-setInterval(goNext, 4000)
+setInterval(goNext, 4000);
+
+
+
+// Muda color menu
+
+var doc, bod, htm;
+addEventListener("load", function () {
+  doc = document;
+  bod = doc.menucolor;
+  htm = doc.documentElement;
+  addEventListener("scroll", function () {
+    document.getElementById("menu-one").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-two").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-three").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-four").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-five").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("logo").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("line1").style.backgroundColor = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("line2").style.backgroundColor = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("line3").style.backgroundColor = htm.scrollTop > 900 ? "#42567a" : "#fff";
+  });
+});
+
+
+
 
 

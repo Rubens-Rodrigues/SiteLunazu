@@ -35,7 +35,6 @@
   padding: 30px;
   margin-top: 20px;
   gap: 10px;
-  overflow: hidden;
   overflow-x: scroll;
 }
 .planos::-webkit-scrollbar {
@@ -112,6 +111,7 @@
 }
 
 .plano0 {
+  
   display: none;
 }
 
@@ -127,7 +127,7 @@
 
   .plano0{
     display: block;
-    margin-left: 80px;
+    margin-left: 28rem;
   }
 
 }

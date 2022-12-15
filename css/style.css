@@ -17,11 +17,14 @@
   color: #fff;
 }
 
+body {
+  background-color: #000;
+}
+
 body a {
   list-style: none;
   text-decoration: none;
   color: #fff;
-  
 }
 
 main {

@@ -13,7 +13,9 @@ class MobileNavbar {
     this.navLinks.forEach((link, index) => {
       link.style.animation
         ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`);
     });
   }
 
@@ -32,7 +34,7 @@ class MobileNavbar {
       this.addClickEvent();
     }
     return this;
-  }  
+  }
 }
 
 const mobileNavbar = new MobileNavbar(
@@ -40,7 +42,9 @@ const mobileNavbar = new MobileNavbar(
   ".navList",
   ".navList li"
 );
-mobileNavbar.init()
+mobileNavbar.init();
+
+
 
 // Scroll
 const item = document.querySelectorAll("[data-anime");
@@ -61,7 +65,30 @@ animeScroll();
 
 window.addEventListener("scroll", () => {
   animeScroll();
-})
+});
+
+// scroll 2
+
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll('.js-scroll');
+  const alturaTela = window.innerHeight * 1;
+  console.log(sections)
+
+  function animaScroll() {
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const isSectionVisible = sectionTop - alturaTela < 0;
+      if (isSectionVisible) {
+        section.classList.add("ativo");
+      } else {
+        section.classList.remove("ativo")
+      }
+    });
+  }
+  animaScroll();
+  window.addEventListener("scroll", animaScroll);
+}
+initAnimacaoScroll();
 
 // Slider
 
@@ -70,24 +97,28 @@ let currentSlide = 0;
 
 let sliderWidth = document.querySelector(".slider").clientWidth;
 
-document.querySelector(".slider--width").style.width = `${sliderWidth * totalSlides}px`;
+document.querySelector(".slider--width").style.width = `${
+  sliderWidth * totalSlides
+}px`;
 
 document.querySelector(".controls").style.width = `${sliderWidth}px`;
-document.querySelector(".controls").style.height = `${document.querySelector(".slider").clientHeight}px`;
+document.querySelector(".controls").style.height = `${
+  document.querySelector(".slider").clientHeight
+}px`;
 
 function goPrev() {
   currentSlide--;
   if (currentSlide < 0) {
     currentSlide = totalSlides - 1;
   }
-  updateMargin()
+  updateMargin();
 }
 function goNext() {
   currentSlide++;
   if (currentSlide > totalSlides - 1) {
     currentSlide = 0;
   }
-  updateMargin()
+  updateMargin();
 }
 
 function updateMargin() {
@@ -98,8 +129,6 @@ function updateMargin() {
 
 setInterval(goNext, 4000);
 
-
-
 // Muda color menu
 
 var doc, bod, htm;
@@ -108,19 +137,23 @@ addEventListener("load", function () {
   bod = doc.menucolor;
   htm = doc.documentElement;
   addEventListener("scroll", function () {
-    document.getElementById("menu-one").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("menu-two").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("menu-three").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("menu-four").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("menu-five").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("logo").style.color = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("line1").style.backgroundColor = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("line2").style.backgroundColor = htm.scrollTop > 900 ? "#42567a" : "#fff";
-    document.getElementById("line3").style.backgroundColor = htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-one").style.color =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-two").style.color =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-three").style.color =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-four").style.color =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("menu-five").style.color =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("logo").style.color =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("line1").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("line2").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("line3").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
   });
 });
-
-
-
-
-

@@ -11,8 +11,8 @@
 
 <body>
   <header>
-    <h1 data-anime="down"><a id="logo" href="#topo">Lunazu</a></h1>
-    <div class="navBar mobile-menu">
+    <h1 class="js-scroll"><a id="logo" href="#topo">Lunazu</a></h1>
+    <div class="navBar mobile-menu js-scroll">
       <div id="line1" class="line1"></div>
       <div id="line2" class="line2"></div>
       <div id="line3" class="line3"></div>
@@ -22,18 +22,18 @@
   <hr id="hr2">
   <hr id="hr3">
   <section id="topo" class="topo">
-    <h2 data-anime="down">SISTEMA DE GESTÃO<br>AGROPECUÁRIA</h2>
+    <h2 class="js-scroll">SISTEMA DE GESTÃO<br>AGROPECUÁRIA</h2>
     <div class="movi">
       <video autoplay muted loop preload="auto" class="backgroundMovi" poster="./assets/img/frame-video.JPG">
-        <source src="./assets/video/backgroundVideo.mp4"  type="video/mp4">
+        <source src="./assets/video/backgroundVideo.mp4" type="video/mp4">
       </video>
     </div>
     <div class="content">
-      <div class="items">
-        <h3 data-anime="right" id="c1">SEU AGRO</h3>
-        <h3 data-anime="right" id="c2">PODE SER</h3>
-        <h3 data-anime="right" id="c3">TUDO</h3>
-        <button data-anime="right" id="btn-adquirir"><a href="#">Adquirir agora</a></button>
+      <div class="items js-scroll">
+        <h3 id="c1">SEU AGRO</h3>
+        <h3 id="c2">PODE SER</h3>
+        <h3 id="c3">TUDO</h3>
+        <button id="btn-adquirir"><a href="#">Adquirir agora</a></button>
       </div>
       <div class="navList">
         <ul>
@@ -45,7 +45,7 @@
         </ul>
       </div>
       <div class="nav-List desktop">
-        <ul>
+        <ul class="js-scroll">
           <li><a id="menu-one" href="#sobre">&#8212; Sobre</a></li>
           <li><a id="menu-two" href="#sistema">&#8212; Nosso Sistema</a></li>
           <li><a id="menu-three" href="#beneficio">&#8212; Benefícios</a></li>
@@ -59,15 +59,15 @@
   <section data-anime="up" id="sobre" class="sobre">
     <article class="content-sobre">
       <div class="description">
-        <h2 data-anime="left">Seu agro cada vez <br> mais Tech</h2>
+        <h2 class="js-scroll">Seu agro cada vez <br> mais Tech</h2>
         <div class="texto">
-          <p data-anime="right">Aqui você encontrará as melhores formas de gestão para sua fazenda. Não importa o setor
+          <p class="js-scroll">Aqui você encontrará as melhores formas de gestão para sua fazenda. Não importa o setor
             e nem a demanda, aqui você encontra o meio mais efetivo pra controlar oq produz e, saber se isso está de
             acordo com as perspectivas de mercado. </p>
-          <button data-anime="right" id="btn-sobre"><a href="#">Mais detalhes</a></button>
+          <button class="js-scroll" id="btn-sobre"><a href="#">Mais detalhes</a></button>
         </div>
       </div>
-      <ul data-anime="down">
+      <ul class="js-scroll">
         <li>1- Lorem ipsumdolaor</li>
         <li>2- Lorem ipsumdolor</li>
         <li>3- Loremipsum</li>
@@ -82,7 +82,7 @@
         <div class="control" onclick="goPrev()">&lsaquo;</div>
         <div class="control" onclick="goNext()">&rsaquo;</div>
       </div>
-      <h2 data-anime="left" style="position: absolute; padding: 20px; ">Nosso sistema</h2>
+      <h2 class="js-scroll" style="position: absolute; padding: 20px; ">Nosso sistema</h2>
       <div class="slider--width">
         <div class="slider--item"
           style="background-image: url(https://blog.climatefieldview.com.br/hubfs/Software%20gestao%20de%20fazenda%20na%20agricultura.webp);">
@@ -100,48 +100,86 @@
     </div>
   </section>
 
-  <section data-anime="up" id="beneficio" class="content-beneficio">
-    <div class="container-beneficios">BENEFICIOS</div>
+  <section data-anime="up" id="beneficio" class="beneficios">
+    <h2 class="js-scroll beneficio">BENEFÍCIOS</h2>
+    <div class="carrosel">
+      <div class="card">
+        <h2 class="js-scroll">Lorem, ipsum.</h2>
+        <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
+        width="80px">
+        <p class="js-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
+        <span class="js-scroll">01</span>
+      </div>
+      <div class="card">
+        <h2 class="js-scroll">Lorem, ipsum.</h2>
+        <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
+        width="80px">
+        <p class="js-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
+        <span class="js-scroll">02</span>
+      </div>
+      <div class="card">
+        <h2 class="js-scroll">Lorem, ipsum.</h2>
+        <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
+        width="80px">
+        <p class="js-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
+        <span class="js-scroll">03</span>
+      </div>
+      <div class="card">
+        <h2 class="js-scroll">Lorem, ipsum.</h2>
+        <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
+        width="80px">
+        <p class="js-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
+        <span class="js-scroll">04</span>
+      </div>
+      <div class="card">
+        <h2 class="js-scroll">Lorem, ipsum.</h2>
+        <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
+        width="80px">
+        <p class="js-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
+        <span class="js-scroll">05</span>
+      </div>
+    </div>
+ 
   </section>
 
   <section data-anime="up" class="content-planos" id="planos">
     <div class="container-planos">
-      <h2>PLANOS CERTOS PARA VOCÊ</h2>
+      <h2 class="js-scroll">PLANOS CERTOS PARA VOCÊ</h2>
       <div class="planos">
-        <div class="planos plano0"></div>
+        <div class="plano0"></div>
         <div class="plano plano1">
           <h3>139,90</h3>
           <P>Ate 300 <br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
+          <button class="js-scroll"><a href="#">CONTRATAR</a></button>
         </div>
         <div class="plano plano2">
           <h3>179,90</h3>
           <P>301 - 500<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
+          <button class="js-scroll"><a href="#">CONTRATAR</a></button>
         </div>
         <div class="plano plano3">
           <h3>320,90</h3>
           <P>501 - 1000<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
+          <button class="js-scroll"><a href="#">CONTRATAR</a></button>
         </div>
         <div class="plano plano4">
           <h3>575,90</h3>
           <P>1001 - 3000<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
+          <button class="js-scroll"><a href="#">CONTRATAR</a></button>
         </div>
         <div class="plano plano5">
           <h3 style="font-size: 13px;">CONSULTAR</h3>
           <P>A partir de 3000<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
+          <button class="js-scroll"><a href="#">CONTRATAR</a></button>
         </div>
       </div>
-      <ul>
+      <ul class="js-scroll">
         <li><span style="color: green; font-size: 25px;">&#x2714;</span> Nos planos anuais não será cobrado taxa
           de ativação*. Preços especiais para essa modalidade**</li>
         <li><span style="color: green; font-size: 25px;">&#x2714;</span> Temos planos personalizado para fazendas
           acima de 3000 animais</li>
       </ul>
-      <div class="obs">
+      <div class="obs js-scroll">
         <p>*Taxa de ativação a consultar</p>
         <p>**Valor referente a mensalidade, no plano anual os calores são alterados.</p>
       </div>

@@ -1,6 +1,99 @@
-.container-beneficios {
+.beneficios {
+  width: 100%;
   height: 100vh;
   text-align: center;
   background-color: #fff;
-  color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.carrosel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 5px;
+}
+
+.card {
+  background-color: #fff;
+  position: relative;
+  width: 100px;
+  height: 70vh;
+  min-width: 200px;
+  max-height: 500px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+  right: -4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.beneficios .beneficio {
+  margin-top: 30px;
+  margin-right: -7rem;
+  font-size: 40px;
+  color: green;
+}
+
+.beneficios h2 {
+  color: #42567a;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.carrosel p {
+  margin-top: 20px;  
+}
+
+.carrosel span {
+  font-size: 30px;
+  color: green;
+  display: block;
+  border-top: 1px dashed #42567a;
+  width: 70%;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 991px){
+
+  .carrosel {
+    overflow-x: scroll;
+  }
+
+  .carrosel span {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card {
+    right: -10rem;
+  }
+  .beneficios .beneficio {
+    margin-top: 60px;
+    margin-right: 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .card {
+    right: -18rem;
+  }
+}
+@media screen and (max-width: 425px){
+  .card {
+    right: -22rem;
+  }
 }

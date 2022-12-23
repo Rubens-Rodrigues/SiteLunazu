@@ -30,8 +30,8 @@
   right: -4rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
   font-size: 15px;
   cursor: pointer;
   overflow: hidden;
@@ -44,18 +44,20 @@
   color: green;
 }
 
-.beneficios h2 {
+.card h2 {
   color: #42567a;
+  overflow:  hidden;
 }
 .card:hover {
   transform: scale(1.05);
 }
 
-.carrosel p {
-  margin-top: 20px;  
+.card p {
+  margin-top: 20px; 
+  overflow: hidden;
 }
 
-.carrosel span {
+.card span {
   font-size: 30px;
   color: green;
   display: block;
@@ -63,6 +65,7 @@
   width: 70%;
   margin-top: 3rem;
   text-align: left;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px){
@@ -71,7 +74,7 @@
     overflow-x: scroll;
   }
 
-  .carrosel span {
+  .card span {
     width: 90%;
   }
 }
@@ -87,13 +90,25 @@
   }
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 580px) {
   .card {
     right: -18rem;
   }
 }
+
 @media screen and (max-width: 425px){
   .card {
     right: -22rem;
   }
+}
+
+@media screen and (max-height: 500px){
+  .beneficios{
+    height: 600px;
+  }
+  .card {
+    height: 90vh;
+    right: -10rem;
+  }
+  
 }

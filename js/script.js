@@ -1,50 +1,66 @@
 // Nav bar
-class MobileNavbar {
-  constructor(mobileMenu, navList, navLinks) {
-    this.mobileMenu = document.querySelector(mobileMenu);
-    this.navList = document.querySelector(navList);
-    this.navLinks = document.querySelectorAll(navLinks);
-    this.activeClass = "active";
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  animateLinks() {
-    this.navLinks.forEach((link, index) => {
-      link.style.animation
-        ? (link.style.animation = "")
-        : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-            index / 7 + 0.3
-          }s`);
-    });
-  }
-
-  handleClick() {
-    this.navList.classList.toggle(this.activeClass);
-    this.mobileMenu.classList.toggle(this.activeClass);
-    this.animateLinks();
-  }
-
-  addClickEvent() {
-    this.mobileMenu.addEventListener("click", this.handleClick);
-  }
-
-  init() {
-    if (this.mobileMenu) {
-      this.addClickEvent();
+function initNavBar() {
+  class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
     }
-    return this;
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
   }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".navList",
+    ".navList li"
+  );
+  mobileNavbar.init();
+  
+  // faz o menu hamburger sumir ao clicar fora
+  const menu = document.querySelector('.mobile-menu')
+  const navList = document.querySelector('.navList')
+
+  document.addEventListener('click', function (event) {
+    if (event.target.matches('.mobile-menu')) {
+      menu.classList.add('active');
+      navList.classList.add('active');
+    } else if (menu.classList.contains('active')) {
+      menu.classList.remove('active')
+      navList.classList.remove('active')
+    }
+  })
+  
 }
-
-const mobileNavbar = new MobileNavbar(
-  ".mobile-menu",
-  ".navList",
-  ".navList li"
-);
-mobileNavbar.init();
-
-
+initNavBar();
 
 // Scroll
 const item = document.querySelectorAll("[data-anime");
@@ -70,9 +86,8 @@ window.addEventListener("scroll", () => {
 // scroll 2
 
 function initAnimacaoScroll() {
-  const sections = document.querySelectorAll('.js-scroll');
+  const sections = document.querySelectorAll(".js-scroll");
   const alturaTela = window.innerHeight * 1;
-  console.log(sections)
 
   function animaScroll() {
     sections.forEach((section) => {
@@ -81,7 +96,7 @@ function initAnimacaoScroll() {
       if (isSectionVisible) {
         section.classList.add("ativo");
       } else {
-        section.classList.remove("ativo")
+        section.classList.remove("ativo");
       }
     });
   }
@@ -129,7 +144,7 @@ function updateMargin() {
 
 setInterval(goNext, 4000);
 
-// Muda color menu
+// Muda color do menu fixo
 
 var doc, bod, htm;
 addEventListener("load", function () {
@@ -157,3 +172,5 @@ addEventListener("load", function () {
       htm.scrollTop > 900 ? "#42567a" : "#fff";
   });
 });
+
+

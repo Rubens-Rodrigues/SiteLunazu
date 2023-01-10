@@ -4,7 +4,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: $branco;
   z-index: 1;
 }
 
@@ -29,16 +29,16 @@
 
 .container-contatos p:first-of-type {
   width: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: $montserrat;
   font-size: 30px;
   font-weight: bolder;
-  color: #42567a;
+  color: $sinza;
 }
 
 .container-contatos p:nth-of-type(2) {
   width: 100%;
-  color: green;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: $verde;
+  font-family: $montserrat;
   font-weight: bolder;
   margin-top: -7rem;
 }
@@ -69,7 +69,7 @@
 }
 
 .form h3 {
-  color: #42567a;
+  color: $sinza;
   margin-bottom: 10px;
   overflow-y: hidden;
 }
@@ -85,7 +85,7 @@ form {
 
 .form input {
   width: 100%;
-  color: #42567a;
+  color: $sinza;
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -96,7 +96,7 @@ form {
   width: 100%;
   height: 60px;
   padding: 10px;
-  color: #42567a;
+  color: $sinza;
   border: none;
   border-radius: 10px;
   background-color: rgba(204, 204, 204, 0.226);
@@ -104,16 +104,16 @@ form {
 
 textarea:focus,
 input:focus {
-  outline: 1px solid green;
+  outline: 1px solid $verde;
 }
 
 #submit {
   width: 150px;
   border-radius: 5px;
-  color: #fff;
+  color: $branco;
   border: none;
   font-weight: bolder;
-  background-color: green;
+  background-color: $verde;
   cursor: pointer;
   margin-top: 1rem;
   box-shadow: 0 0 5px 0px rgb(0, 0, 0);
@@ -122,8 +122,8 @@ input:focus {
 
 #submit:hover {
   background: none;
-  border: 2px solid green;
-  color: green;
+  border: 2px solid $verde;
+  color: $verde;
   box-shadow: none;
 }
 
@@ -132,20 +132,20 @@ input:focus {
   width: 100%;
   bottom: 0;
   padding: 10px;
-  background-color: #fff;
+  background-color: $branco;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .footer p {
-  color: #42567a;
+  color: $sinza;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
 .footer a {
-  color: #42567a;
+  color: $sinza;
   cursor: pointer;
   letter-spacing: 1px;
 }
@@ -203,7 +203,7 @@ input:focus {
   }
 
   .form h3 {
-    color: #42567a;
+    color: $sinza;
     margin-bottom: 10px;
     overflow-y: hidden;
   }

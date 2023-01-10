@@ -28,14 +28,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: clamp(1.5em, 1.5em + 4vw, 4em);
-  color: white;
+  font-size: 5rem;
+  color: $branco;
   text-align: center;
   z-index: 1;
 }
 
 .items h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 #c1 {
   width: 100%;
@@ -55,21 +55,21 @@
 
 button a {
   text-decoration: none;
-  color: #fff;
+  color: $branco;
   padding: 0.5em 1.1em;
   border-radius: 20px;
 }
 
 #btn-adquirir {
   margin-bottom: -10em;
-  margin-top: 10em;
+  margin-top: 5em;
   margin-right: -45em;
   width: 11em;
   padding: 0.6em;
   border-radius: 20px;
-  border: 1px solid #fff;
+  border: 1px solid $branco;
   background: none;
-  color: #fff;
+  color: $branco;
   cursor: pointer;
   transition: all 1s;
 }
@@ -77,7 +77,6 @@ button a {
 #btn-adquirir:hover {
   background-color: rgba(255, 255, 255, 0.322);
 }
-
 
 .topo h2 {
   height: 100%;
@@ -89,29 +88,31 @@ button a {
   margin-top: 2em;
   margin-left: 10em;
   text-align: left;
-  color: #fff;
-  font-size: clamp(1em, 1em + 1.5vw, 1.5em);
+  color: $branco;
+  font-size: 1.5rem;
   font-weight: 400;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
 @media screen and (max-width: 991px) {
-
-  #c1, #c2, #c3 {
+  #c1,
+  #c2,
+  #c3 {
     margin-right: -1em;
     text-align: left;
   }
- 
+
   .topo h2 {
     display: none;
-  }  
-
-  #btn-adquirir {
-    margin-right: 50em;
   }
 
+  .items {
+    font-size: 4rem;
+  }
+
+  #btn-adquirir {
+    margin-right: 45em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -123,6 +124,14 @@ button a {
 @media screen and (max-width: 500px) {
   #btn-adquirir {
     margin-right: 13em;
-  
-  }  
+  }
+  .items {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .items {
+    font-size: 2.5rem;
+  }
 }

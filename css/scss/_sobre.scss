@@ -39,19 +39,18 @@
 }
 .description p {
   overflow: hidden;
-  letter-spacing: .1em;  
-  color: #fff;
+  letter-spacing: 0.1em;
+  color: $branco;
 }
-
 
 #btn-sobre {
   margin-top: 1em;
   width: 11em;
   padding: 0.6em;
   border-radius: 20px;
-  border: 1px solid #fff;
+  border: 1px solid $branco;
   background: none;
-  color: #fff;
+  color: $branco;
   cursor: pointer;
   transition: all 1s;
 }
@@ -62,7 +61,6 @@
 
 .description h2 {
   margin-top: -5em;
-  
 }
 
 .content-sobre ul {
@@ -83,16 +81,13 @@
   align-items: center;
   cursor: pointer;
   transition: all 1s;
-  border: .1em solid rgba(255, 255, 255, 0.26);
-  color: #fff;
+  border: 0.1em solid rgba(255, 255, 255, 0.26);
+  color: $branco;
 }
 
 .content-sobre ul li:hover {
   background-color: rgba(255, 255, 255, 0.322);
 }
-
-
-
 
 @media screen and (min-width: 1380px) {
   .description {
@@ -100,16 +95,16 @@
     width: 65%;
     margin-left: -3em;
   }
-  
+
   .content-sobre ul {
     width: 69%;
     margin-right: -2em;
-  }  
+  }
 }
 
 @media screen and (max-width: 991px) {
   .sobre {
-      animation: animeBackground 20s alternate infinite;
+    animation: animeBackground 20s alternate infinite;
   }
   .content-sobre {
     flex-direction: column-reverse;
@@ -125,7 +120,7 @@
     align-items: flex-start;
     margin-bottom: 1em;
   }
-  
+
   .description .texto {
     width: 70%;
     margin-top: 1em;
@@ -141,21 +136,21 @@
     margin: 0;
     padding: 1em;
   }
-  
-.content-sobre ul li {
-  border: .1em solid rgba(255, 255, 255, 0.26);
-}
+
+  .content-sobre ul li {
+    border: 0.1em solid rgba(255, 255, 255, 0.26);
+  }
 }
 
 @media screen and (max-width: 500px) {
   .sobre {
-      animation: animeBackground 100s alternate infinite;
+    animation: animeBackground 100s alternate infinite;
   }
 
   .description {
     margin-left: -5em;
   }
-  
+
   .description .texto {
     width: 90%;
     font-size: 0.8em;
@@ -187,16 +182,12 @@
   }
 }
 
-
-
-
 /* animação bacground sobre */
 @keyframes animeBackground {
   0% {
-    background-position:  0, 0;
+    background-position: 0, 0;
   }
   100% {
     background-position: 100% 0, 100% 0;
   }
 }
-

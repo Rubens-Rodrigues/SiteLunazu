@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   text-align: center;
-  background-color: #fff;
+  background-color: $branco;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -19,7 +19,7 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: $branco;
   position: relative;
   width: 100px;
   height: 70vh;
@@ -41,35 +41,34 @@
   margin-top: 30px;
   margin-right: -7rem;
   font-size: 40px;
-  color: green;
+  color: $verde;
 }
 
 .card h2 {
-  color: #42567a;
-  overflow:  hidden;
+  color: $sinza;
+  overflow: hidden;
 }
 .card:hover {
   transform: scale(1.05);
 }
 
 .card p {
-  margin-top: 20px; 
+  margin-top: 20px;
   overflow: hidden;
 }
 
 .card span {
   font-size: 30px;
-  color: green;
+  color: $verde;
   display: block;
-  border-top: 1px dashed #42567a;
+  border-top: 1px dashed $sinza;
   width: 70%;
   margin-top: 3rem;
   text-align: left;
   overflow: hidden;
 }
 
-@media screen and (max-width: 991px){
-
+@media screen and (max-width: 991px) {
   .carrosel {
     overflow-x: scroll;
   }
@@ -79,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .card {
     right: -10rem;
   }
@@ -96,19 +95,18 @@
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .card {
     right: -22rem;
   }
 }
 
-@media screen and (max-height: 500px){
-  .beneficios{
+@media screen and (max-height: 500px) {
+  .beneficios {
     height: 600px;
   }
   .card {
     height: 90vh;
     right: -10rem;
   }
-  
 }

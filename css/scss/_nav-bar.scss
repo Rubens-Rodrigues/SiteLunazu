@@ -1,9 +1,9 @@
 .navBar div {
   width: 40px;
   height: 1px;
-  background-color: #fff;
+  background-color: $branco;
   margin: 8px;
-  transition: .8s;
+  transition: 0.8s;
 }
 
 .navBar {
@@ -28,7 +28,7 @@
   transition: transform 0.5s ease-in;
 }
 
-.navList  li {
+.navList li {
   margin-top: 2em;
   margin-left: 30px;
 }
@@ -51,15 +51,17 @@
   margin-top: 0.5em;
 }
 
-.nav-List ul a, .navList ul a {
-  letter-spacing: .1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  opacity: .7;
+.nav-List ul a,
+.navList ul a {
+  letter-spacing: 0.1rem;
+  font-family: $montserrat;
+  opacity: 0.7;
   transition: all 0.5s;
-  color: #fff;
+  color: $branco;
 }
 
-.nav-List ul a:hover, .navList ul a:hover {
+.nav-List ul a:hover,
+.navList ul a:hover {
   opacity: 1;
   transition: all 0.2s;
 }
@@ -73,9 +75,7 @@
   .nav-List {
     z-index: 0;
   }
-  
-} 
-
+}
 
 /* Nav Bar */
 .navList.active {

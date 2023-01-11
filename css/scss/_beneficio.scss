@@ -87,6 +87,14 @@
     margin-right: 0;
     font-size: 30px;
   }
+  .carrosel::after {
+    content: '→';
+    position: absolute;
+    top: 6rem;
+    right: 30px;
+    color: $sinza;
+    animation: seta .5s ease-in 0s infinite alternate;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -108,5 +116,14 @@
   .card {
     height: 90vh;
     right: -10rem;
+  }
+}
+
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
   }
 }

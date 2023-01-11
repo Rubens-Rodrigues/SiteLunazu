@@ -147,6 +147,15 @@ li {
   .plano0 {
     margin-left: 12rem;
   }
+
+  .planos::after {
+    content: '→';
+    position: absolute;
+    top: 4.5rem;
+    right: 30px;
+    color: $sinza;
+    animation: seta .5s ease-in 0s infinite alternate;
+  }
 }
 @media screen and (max-width: 580px), (max-height: 500px) {
   .plano0 {

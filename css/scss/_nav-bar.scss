@@ -1,14 +1,17 @@
+.navBar {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  padding: 10px;
+}
+
 .navBar div {
   width: 40px;
   height: 1px;
   background-color: $branco;
   margin: 8px;
   transition: 0.8s;
-}
-
-.navBar {
-  cursor: pointer;
-  margin-right: 0.8em;
 }
 
 .navList {
@@ -58,14 +61,10 @@
   opacity: 0.7;
   transition: all 0.5s;
   color: $branco;
+  &:hover {
+    opacity: 1;
+  }
 }
-
-.nav-List ul a:hover,
-.navList ul a:hover {
-  opacity: 1;
-  transition: all 0.2s;
-}
-
 
 @media screen and (max-width: 991px) {
   .nav-List li {

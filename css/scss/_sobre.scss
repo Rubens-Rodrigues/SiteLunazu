@@ -1,6 +1,6 @@
 .sobre {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-image: url(../assets/img/colheita.jpg);
   background-size: cover;
@@ -53,10 +53,9 @@
   color: $branco;
   cursor: pointer;
   transition: all 1s;
-}
-
-#btn-sobre:hover {
-  background-color: rgba(255, 255, 255, 0.322);
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+  }
 }
 
 .description h2 {
@@ -83,10 +82,9 @@
   transition: all 1s;
   border: 0.1em solid rgba(255, 255, 255, 0.26);
   color: $branco;
-}
-
-.content-sobre ul li:hover {
-  background-color: rgba(255, 255, 255, 0.322);
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+  }
 }
 
 @media screen and (min-width: 1380px) {
@@ -148,6 +146,7 @@
   }
 
   .description {
+    margin-top: -1.3rem;
     margin-left: -5em;
   }
 
@@ -164,7 +163,8 @@
   }
 
   .content-sobre ul li {
-    height: 50px;
+    justify-content: flex-start;
+    padding-left: 10px;
   }
 
   .content-sobre ul :nth-child(3) {
@@ -175,10 +175,6 @@
   }
   .content-sobre ul :nth-child(1) {
     width: 70%;
-  }
-
-  .content-sobre ul li {
-    width: 100%;
   }
 }
 

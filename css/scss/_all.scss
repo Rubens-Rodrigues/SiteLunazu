@@ -27,7 +27,7 @@ body a {
   z-index: 2;
   width: 10px;
   height: 100vh;
-  margin-left: 77em;
+  right: 7em;
   border-right: none;
   border-bottom: none;
   border-top: none;
@@ -39,10 +39,13 @@ body a {
   z-index: 2;
   width: 10px;
   height: 100vh;
-  margin-left: 46em;
+  right: 70em;
   border-right: none;
   border-bottom: none;
   border-top: none;
+  @media (min-width: 1500px) {
+    right: 85em;
+  }
 }
 
 #hr3 {
@@ -51,10 +54,13 @@ body a {
   z-index: 2;
   width: 10px;
   height: 100vh;
-  margin-left: 15em;
+  right: 38em;
   border-right: none;
   border-bottom: none;
   border-top: none;
+  @media (min-width: 1500px) {
+    right: 45em;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -63,23 +69,7 @@ body a {
   }
 }
 
-/* Animação scroll*/
-
-[data-anime] {
-  opacity: 0;
-  transition: 1s;
-}
-
-[data-anime="down"] {
-  transform: translate3d(0, -100%, 0);
-}
-
-[data-anime].animate {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-/* Animação scroll 2 */
+/* Animação scroll */
 
 .js-scroll {
   opacity: 0;

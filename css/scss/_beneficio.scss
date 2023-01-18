@@ -1,55 +1,66 @@
 .beneficios {
   width: 100%;
-  height: 100vh;
-  text-align: center;
-  background-color: $branco;
+  height: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  overflow: hidden;
   z-index: 1;
+  background-color: $branco;
 }
 
-.carrosel {
+.container-beneficios {
+  width: 74%;
+  height: 100%;
+  margin-right: -8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $montserrat;
+}
+
+.cards {
   width: 100%;
   height: 100%;
+  padding: 30px 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding-top: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 5px;
 }
 
 .card {
   background-color: $branco;
   position: relative;
-  width: 100px;
-  height: 70vh;
-  min-width: 200px;
-  max-height: 500px;
+  width: 200px;
+  height: 400px;
   padding: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
-  right: -4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 15px;
+  transition: 0.3s;
   cursor: pointer;
-  overflow: hidden;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .beneficios .beneficio {
-  margin-top: 30px;
-  margin-right: -7rem;
+  padding-top: 10px;
   font-size: 40px;
   color: $verde;
 }
 
 .card h2 {
   color: $sinza;
-  overflow: hidden;
-}
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card p {
@@ -69,61 +80,19 @@
 }
 
 @media screen and (max-width: 991px) {
-  .carrosel {
-    overflow-x: scroll;
-  }
-
-  .card span {
+  .container-beneficios {
+    margin: 0;
     width: 90%;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .card {
-    right: -10rem;
-  }
   .beneficios .beneficio {
-    margin-top: 60px;
-    margin-right: 0;
     font-size: 30px;
   }
-  .carrosel::after {
-    content: '→';
-    position: absolute;
-    top: 6rem;
-    right: 30px;
-    color: $sinza;
-    animation: seta .5s ease-in 0s infinite alternate;
-  }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 420px) {
   .card {
-    right: -18rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .card {
-    right: -22rem;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  .beneficios {
-    height: 600px;
-  }
-  .card {
-    height: 90vh;
-    right: -10rem;
-  }
-}
-
-@keyframes seta {
-  from {
-    right: 30px;
-  }
-  to {
-    right: 20px;
+    width: 90vw;
   }
 }

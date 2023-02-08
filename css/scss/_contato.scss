@@ -111,7 +111,6 @@ input:focus {
   font-weight: bolder;
   background-color: $verde;
   cursor: pointer;
-  margin-top: 1rem;
   box-shadow: 0 0 5px 0px rgb(0, 0, 0);
   overflow-y: hidden;
   &:hover {
@@ -137,6 +136,8 @@ input:focus {
   color: $sinza;
   font-size: 14px;
   letter-spacing: 1px;
+  font-weight: bolder!important;
+  opacity: 1;
 }
 
 .footer a {
@@ -210,6 +211,8 @@ input:focus {
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    width: 80%;
+    text-align: center;
   }
 
   .footer p {

@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
   transition: all ease 1s;
   color: $branco;
   font-weight: bold;
+  font-family: $montserrat;
 }
 
 body {
@@ -22,52 +21,8 @@ body a {
   color: $branco;
 }
 
-#hr1 {
-  opacity: 0.3;
-  position: fixed;
-  z-index: 2;
-  width: 10px;
-  height: 100vh;
-  right: 7em;
-  border-right: none;
-  border-bottom: none;
-  border-top: none;
-}
-
-#hr2 {
-  opacity: 0.3;
-  position: fixed;
-  z-index: 2;
-  width: 10px;
-  height: 100vh;
-  right: 70em;
-  border-right: none;
-  border-bottom: none;
-  border-top: none;
-  @media (min-width: 1500px) {
-    right: 81em;
-  }
-}
-
-#hr3 {
-  opacity: 0.3;
-  position: fixed;
-  z-index: 2;
-  width: 10px;
-  height: 100vh;
-  right: 38em;
-  border-right: none;
-  border-bottom: none;
-  border-top: none;
-  @media (min-width: 1500px) {
-    right: 45em;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  hr {
-    display: none;
-  }
+body h2, h3, h4 {
+  font-family: $titulos !important;
 }
 
 /* Animação scroll */

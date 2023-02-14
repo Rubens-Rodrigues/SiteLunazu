@@ -1,16 +1,18 @@
 .navBar {
   position: fixed;
-  top: 15px;
-  right: 20px;
+  top: 0;
+  right: 0;
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 30px 0 30px;
+  height: 100vh;
+  border-left: 1px solid #55555580;
 }
 
 .navBar div {
-  width: 40px;
+  width: 50px;
   height: 1px;
   background-color: $branco;
-  margin: 8px;
+  margin: 9px;
   transition: 0.8s;
 }
 
@@ -38,10 +40,11 @@
 
 .nav-List {
   position: fixed;
-  width: 18%;
   height: 100vh;
   top: 0;
+  padding: 0 50px 0 0;
   z-index: 2;
+  border-right: 1px solid #55555580;
 }
 
 .nav-List ul {
@@ -57,7 +60,7 @@
 .nav-List ul a,
 .navList ul a {
   letter-spacing: 0.1rem;
-  font-family: $montserrat;
+  font-family: $titulos;
   opacity: 0.7;
   transition: all 0.5s;
   color: $branco;
@@ -74,6 +77,11 @@
 
   .nav-List {
     z-index: 0;
+    border: none;
+  }
+
+  .navBar{
+    border: none;
   }
 }
 

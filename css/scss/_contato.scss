@@ -29,7 +29,7 @@
 
 .container-contatos p:first-of-type {
   width: 100%;
-  font-family: $montserrat;
+  font-family: $titulos;
   font-size: 30px;
   font-weight: bolder;
   color: $sinza;
@@ -38,7 +38,7 @@
 .container-contatos p:nth-of-type(2) {
   width: 100%;
   color: $verde;
-  font-family: $montserrat;
+  font-family: $titulos;
   font-weight: bolder;
   margin-top: -7rem;
 }
@@ -47,7 +47,6 @@
   width: 40px;
   cursor: pointer;
   filter: grayscale(100%);
-  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.582);
   &:hover {
     filter: grayscale(0%);
     scale: 1.04;
@@ -77,6 +76,7 @@
   color: $sinza;
   margin-bottom: 10px;
   overflow-y: hidden;
+  font-family: $titulos !important;
 }
 
 .form input {
@@ -130,9 +130,11 @@ input:focus {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-left: 5em;
 }
 
 .footer p {
+  font-family: $titulos;
   color: $sinza;
   font-size: 14px;
   letter-spacing: 1px;
@@ -213,6 +215,7 @@ input:focus {
     padding-bottom: 20px;
     width: 80%;
     text-align: center;
+    margin: 0;
   }
 
   .footer p {

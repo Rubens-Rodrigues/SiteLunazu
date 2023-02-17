@@ -149,6 +149,16 @@ addEventListener("load", function () {
       htm.scrollTop > 900 ? "#42567a" : "#fff";
     document.getElementById("line3").style.backgroundColor =
       htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("line").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("2line").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("3line").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("4line").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
+    document.getElementById("5line").style.backgroundColor =
+      htm.scrollTop > 900 ? "#42567a" : "#fff";
   });
 });
 

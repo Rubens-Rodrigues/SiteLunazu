@@ -1,0 +1,159 @@
+.pecuaria-header a {
+  color: $sinza;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+#a1 {
+  position: relative;
+  display: inline-block;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.nav-List h2 {
+  color: $sinza;
+  rotate: -90deg;
+  padding: 50% 0;
+  letter-spacing: 2px;
+  margin-top: 10em;
+}
+
+.pecuaria-container {
+  height: 100%;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  @media screen and (max-width: 991px) {
+    width: 100vw;
+  }
+}
+
+.pecuaria-descricao {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  height: 60%;
+    @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    height: 5%;
+    padding-top: 20px;
+  }
+  h2 {
+    width: 50%;
+    color: $verde;
+    font-size: 2.2rem;
+    text-align: left;
+    padding: 30px;
+    @media screen and (max-width: 768px){
+      width: 100%;
+      font-size: 1.5rem;
+      padding-bottom: 0;
+    }
+  }
+  p {
+    width: 50%;
+    font-size: 1.3rem;
+    padding: 20px;
+    @media screen and (max-width: 768px){
+      width: 100%;
+      font-size: 1rem;
+      padding: 30px;
+    }
+  }
+}
+
+.pecuaria-items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  .pecuaria-item {
+    border: 1px solid $sinza;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    cursor: default;
+    @media screen and (max-width: 600px){
+      width: 90vw;
+      height: 150px;
+    }
+    h3 {
+      padding-bottom: 10px;
+      font-size: 2rem;
+      color: $sinza;
+    }
+    &:hover {
+      background-color: $verde;
+      box-shadow: 1px 1px 10px 1px ($preto);
+    }
+  }
+}
+
+.pecuaria-item:hover span {
+  color: $branco;
+  background-color: rgba(128, 128, 128, 0.849);
+}
+.pecuaria-item:hover p,
+.pecuaria-item:hover h3 {
+  color: $branco;
+}
+
+.pecuaria-item span {
+  color: $sinza;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  border: 2px solid $sinza;
+  border-radius: 8px;
+  position: absolute;
+  left: -10px;
+  top: 15px;
+}
+
+.pecuaria-header .line{
+  width: 100%;
+  height: 2px;
+  background-color: $sinza;
+  position: absolute;
+  display: inline-block;
+  bottom: -8px;
+  left: -10px;
+  opacity: 0.7;
+  transform:  scaleX(0);
+  transform-origin: left;
+  transition:  transform 0.5s;
+}
+.pecuaria-header h3:hover .line{
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+
+@media  (max-width: 991px) {
+  .pec-h2 {
+    display: none;
+  }
+}

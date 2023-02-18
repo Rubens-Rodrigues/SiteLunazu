@@ -65,19 +65,19 @@
   margin-top: -5em;
 }
 
-.content-sobre ul {
+.links {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-right: -7em;
+  margin-right: -5em;
   overflow: hidden;
 }
 
-.content-sobre ul li {
+.links a{
   height: 5em;
-  width: 100%;
+  width: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,10 +86,6 @@
   border: 0.1em solid rgba(255, 255, 255, 0.26);
   font-family: $montserrat;
   color: $branco;
-  a{
-    padding: 5% 20%;
-    font-size: 1.3rem;
-  }
   &:hover {
     background-color: rgba(255, 255, 255, 0.322);
   }
@@ -103,7 +99,7 @@
     margin-left: -3em;
   }
 
-  .content-sobre ul {
+  .links {
     width: 69%;
     margin-right: -2em;
   }
@@ -136,7 +132,7 @@
   .description h2 {
     margin: 0;
   }
-  .content-sobre ul {
+  .links {
     width: 100%;
     align-items: none;
     justify-content: none;
@@ -144,7 +140,7 @@
     padding: 1em;
   }
 
-  .content-sobre ul li {
+  .links a {
     border: 0.1em solid rgba(255, 255, 255, 0.26);
   }
 }
@@ -163,7 +159,7 @@
     width: 90%;
     font-size: 0.8em;
   }
-  .content-sobre ul {
+  .links {
     width: 100%;
     margin: 0;
     flex-direction: column;
@@ -171,18 +167,18 @@
     gap: 10px;
   }
 
-  .content-sobre ul li {
+  .links a {
     justify-content: flex-start;
     padding-left: 10px;
   }
 
-  .content-sobre ul :nth-child(3) {
+  .links :nth-child(4) {
     width: 90%;
   }
-  .content-sobre ul :nth-child(2) {
+  .links :nth-child(3) {
     width: 80%;
   }
-  .content-sobre ul :nth-child(1) {
+  .links :nth-child(2) {
     width: 70%;
   }
 }

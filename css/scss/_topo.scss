@@ -18,6 +18,9 @@
   object-fit: cover;
 }
 
+#menu-right{
+  z-index: 2;
+}
 .items {
   position: fixed;
   top: 0;

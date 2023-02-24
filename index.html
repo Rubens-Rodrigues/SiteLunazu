@@ -12,7 +12,10 @@
 <body>
 
   <header>
-    <h1 class="js-scroll"><a id="logo" href="#topo">Lunazu</a></h1>
+    <div class="logo">
+      <img src="./assets/img/logo-03.png" alt="">
+      <a id="logo" href="#topo">Lunazu</a>
+    </div>
     <div class="navBar mobile-menu js-scroll">
       <div id="line1" class="line1"></div>
       <div id="line2" class="line2"></div>
@@ -37,14 +40,24 @@
       </div>
       <div class="navList"> <!-- Menu hamburger-->
         <ul>
-          <li><a href="#sobre"><div class="line"></div>Sobre</a></li>
-          <li><a href="#sistema"><div class="line"></div>Nosso Sistema</a></li>
-          <li><a href="#beneficio"><div class="line"></div>Benefícios</a></li>
-          <li><a href="#planos"><div class="line"></div>Planos</a></li>
-          <li><a href="#contato"><div class="line"></div>Contato</a></li>
+          <li><a href="#sobre">
+              <div class="line"></div>Sobre
+            </a></li>
+          <li><a href="#sistema">
+              <div class="line"></div>Nosso Sistema
+            </a></li>
+          <li><a href="#beneficio">
+              <div class="line"></div>Benefícios
+            </a></li>
+          <li><a href="#planos">
+              <div class="line"></div>Planos
+            </a></li>
+          <li><a href="#contato">
+              <div class="line"></div>Contato
+            </a></li>
         </ul>
       </div>
-      <div class="nav-List"> 
+      <div class="nav-List">
         <ul class="js-scroll">
           <li><a id="menu-one" href="#sobre">&#8212; <div class="line" id="line"></div> Sobre</a></li>
           <li><a id="menu-two" href="#sistema">&#8212; <div class="line" id="2line"></div> Nosso Sistema</a></li>
@@ -68,37 +81,62 @@
           <button class="js-scroll" id="btn-sobre"><a href="#">Mais detalhes</a></button>
         </div>
       </div>
-        <div class="links js-scroll">
+      <div class="links js-scroll">
         <a href="./pages/pecuaria.html">1 - Pecuária.</a>
         <a>2- Lorem ipsum dolor.</a>
         <a>3- Lorem ipsum dolor sit.</a>
-        <a>4- Lorem ipsum dolor sit amet.</a>
-        </div>
+        <a>4- Lorem ipsum dolor sit.</a>
+      </div>
     </article>
   </section>
 
   <section id="sistema" class="sistema">
-    <div class="slider">
-      <div class="controls">
-        <div class="control" onclick="goPrev()">&lsaquo;</div>
-        <div class="control" onclick="goNext()">&rsaquo;</div>
+    <div class="content-sitema">
+      <h2 class="js-scroll">Nosso sistema</h2>
+      <div class="sistema1 js-scroll">
+        <h3>Tecnologia inteligente a favor da sua fazenda</h3>
+        <hr>
+        <p>
+          Entendemos seus problemas e dos aplicativos que estão no mercado. Falta de vários elementos e automação
+          acabam não
+          atingindo o foco principal de potencializar os lucros do seu negócio. Nós fazemos isso e mais!
+        </p>
       </div>
-      <h2 class="js-scroll" style="position: absolute; padding: 20px; ">Nosso sistema</h2>
-      <div class="slider--width">
-        <div class="slider--item"
-          style="background-image: url(./assets/img/sistema1.jpg)">
+      <div class="sistema2 js-scroll">
+        <div>
+          <h3>NÓS OTIMIZAMOS</h3>
+          <p>
+            Através de modernas implementações do nosso sistema e treinamento de todos seus funcionários
+          </p>
         </div>
-        <div class="slider--item"
-          style="background-image: url(./assets/img/sistema2.jpg);">
-        </div>
-        <div class="slider--item"
-          style="background-image: url(./assets/img/sistema3.jpg);">
-        </div>
-        <div class="slider--item"
-          style="background-image: url(./assets/img/sistema4.jpg);">
+        <div >
+          <h3>NÓS DESENVOLVEMOS</h3>
+          <p>
+            Um sistema totalmente personalizado por você que atende qualquer necessidade de um produtor rurals!
+          </p>
         </div>
       </div>
+      <div class="sistema3 js-scroll">
+        <div>
+          <h3>NÓS AUMENTAMOS SEUS LUCROS</h3>
+          <p>
+            através de projeções, painéis de controle e consultorias com nossos profissionais qualificados de
+            prontidão para
+            oferecer o melhor e mais moderno para sua produção.
+          </p>
+        </div>
+        <div>
+          <h3>NÓS TE AJUDAMOS A CRESCER</h3>
+          <p>
+            e crescemos juntos com você! Oferecemos toda a modernidade e comodidade para suas ações do dia-dia
+            seja em atividades de
+            campo ou administrativas. Melhorando e sempre para frente!
+          </p>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
   <section id="beneficio" class="beneficios">
@@ -168,9 +206,9 @@
         </div>
       </div>
       <ul clas js-scrolls="js-scroll">
-        <li><span style="color: green; font-size: 25px;">&#x2714;</span> Nos planos anuais não será cobrado taxa
+        <li><span style="color: #5c8a71; font-size: 25px;">&#x2714;</span> Nos planos anuais não será cobrado taxa
           de ativação*. Preços especiais para essa modalidade**</li>
-        <li><span style="color: green; font-size: 25px;">&#x2714;</span> Temos planos personalizado para fazendas
+        <li><span style="color: #5c8a71; font-size: 25px;">&#x2714;</span> Temos planos personalizado para fazendas
           acima de 3000 animais</li>
       </ul>
       <div class="obs js-scroll">
@@ -192,20 +230,22 @@
           <a href="#"><img src="./assets/img/facebook.png" alt="Facebook"></a>
           <a href="#"><img src="./assets/img/twitter.png" alt="Twitter"></a>
         </div>
+        <img id="logo-footer" src="./assets/img/logo-02.png" alt="Logo lunazu">
       </div>
 
-        <form class="form js-scroll">
-          <h3>Envie sua mensagem <span style="color: green; font-size: 20px;">&#9993</span></h3>
-          <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required><br>
-          <input type="text" placeholder="Digite um email válido" id="email" name="email" required><br>
-          <input type="number" placeholder="Digite seu Telefone" id="telefone" name="telefone" required><br>
-          <textarea id="mensagem" placeholder="Deixe sua mensagem" name="mensagem" required></textarea><br>
-          <input type="submit" name="submit" id="submit" value="ENVIAR">
-        </form>
+      <form class="form js-scroll">
+        <h3>Envie sua mensagem <span style="color: #5c8a71; font-size: 20px;">&#9993</span></h3>
+        <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required><br>
+        <input type="text" placeholder="Digite um email válido" id="email" name="email" required><br>
+        <input type="number" placeholder="Digite seu Telefone" id="telefone" name="telefone" required><br>
+        <textarea id="mensagem" placeholder="Deixe sua mensagem" name="mensagem" required></textarea><br>
+        <input type="submit" name="submit" id="submit" value="ENVIAR">
+      </form>
 
     </div>
     <footer class="footer">
-      <p>&copy; 2023 - Lunazu - Todos os direitos reservados <a href="../pages/termos-politica-privacidade.html" target="_blank">Política de privacidade</a></p>
+      <p>&copy; 2023 - Lunazu - Todos os direitos reservados <a href="../pages/termos-politica-privacidade.html"
+          target="_blank">Política de privacidade</a></p>
       <p>Desenvolvido por <a href="https://www.positiveempresarial.com.br" target="_blank">Positive.Group</a></p>
     </footer>
   </section>

@@ -1,78 +1,139 @@
 .sistema {
   height: 100%;
-  z-index: 1;
   background-color: $branco;
+  z-index: 1;
   position: relative;
 }
 
-.slider {
+.content-sitema {
   width: 73vw;
-  height: 100%;
+  min-height: 100vh;
   margin: 0 0 0 15em;
-  text-align: center;
-  position: relative;
-}
-
-.slider--width {
-  width: 100%;
-  height: 500px;
-  margin: 4rem auto;
   display: flex;
-  transition: all ease 2s;
-}
-
-.slider--item {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.controls {
-  position: absolute;
-  z-index: 99;
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  padding: 50px;
 }
 
-.control {
-  width: 20px;
-  height: 50px;
-  overflow: hidden;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 80px;
-  margin: 20px;
-  color: $sinza;
-  font-weight: 100;
-  opacity: .5;
-  transition: all 0.2s;
-  &:hover {
-    opacity: .8;
-  }
+.sistema h3 {
+  color: $verde2;
 }
-
-.sistema h2 {
+.sistema p {
   color: $verde;
 }
 
+.sistema1 {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sistema1 hr {
+  height: 150px;
+  border: 0.3px solid $verde;
+  opacity: 0.3;
+}
+
+.sistema1 h3 {
+  width: 50%;
+  padding: 0 30px;
+  font-size: 2em;
+}
+
+.sistema1 p {
+  width: 50%;
+  padding: 0 30px;
+}
+
+.sistema2 {
+  height: 30%;
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.sistema2 div {
+  width: 40%;
+  padding: 10px;
+}
+
+.sistema2 h3 {
+  border-bottom: 0.5px solid rgba($color: $verde, $alpha: .5);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.sistema3 {
+  height: 30%;
+  display: flex;
+  justify-content: right;
+}
+
+.sistema3 div {
+  width: 40%;
+  padding: 10px;
+}
+
+.sistema3 h3 {
+  border-bottom: 0.5px solid  rgba($color: $verde, $alpha: .5);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 991px) {
-  .slider {
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 90%;
+  .sistema1,
+  .sistema2,
+  .sistema3 {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .content-sitema {
+    width: 100vw;
+    margin: 0;
   }
 }
 
-@media screen and (max-width: 580px) {
-  .slider {
-    margin: 30px auto;
+@media screen and (max-width: 700px) {
+  .content-sitema h2{
+    display: block;
+    color: $verde2;
+    padding: 60px 0 20px 0;
+    text-align: center;
+    font-size: 1.8em;
   }
-  .sistema {
-    padding-top: 10%;
+  .sistema1,
+  .sistema2,
+  .sistema3 {
+    flex-direction: column;
+    height: 100%;
+  }
+  .sistema1 div,
+  .sistema2 div,
+  .sistema3 div {
+    width: 100%;
+  }
+
+  .sistema1 h3,
+  .sistema1 p {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sistema h3 {
+    font-size: 1.5em;
+  }
+
+  .sistema1 hr {
+    display: none;
+  }
+
+  .content-sitema {
+    width: 90vw;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
   }
 }

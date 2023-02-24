@@ -40,9 +40,10 @@
 }
 .description p {
   overflow: hidden;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   color: $branco;
-  font-family: $montserrat;
+  font-family: $textos;
+  font-weight: normal;
 }
 
 #btn-sobre {
@@ -53,6 +54,7 @@
   border: 1px solid $branco;
   background: none;
   font-family: $titulos !important;
+  letter-spacing: 1px;
   color: $branco;
   cursor: pointer;
   transition: all 1s;
@@ -84,7 +86,7 @@
   cursor: pointer;
   transition: all 1s;
   border: 0.1em solid rgba(255, 255, 255, 0.26);
-  font-family: $montserrat;
+  font-family: $textos;
   color: $branco;
   &:hover {
     background-color: rgba(255, 255, 255, 0.322);

@@ -11,4 +11,17 @@
 @import "pecuaria";
 
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+// fontes
+
+@font-face {
+  font-family: 'Omega';
+  src: url(../../assets/fontes/Omega+Sans+Regular.ttf);
+}
+@font-face {
+  font-family: 'NexaBolde';
+  src: url(../../assets/fontes/Nexa-Bold.otf);
+}
+@font-face {
+  font-family: 'NexaLight';
+  src: url(../../assets/fontes/Nexa-Light.otf);
+}

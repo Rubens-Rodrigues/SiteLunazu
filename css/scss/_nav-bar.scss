@@ -42,6 +42,7 @@
 .nav-List {
   position: fixed;
   height: 100vh;
+  width: 230px;
   top: 0;
   padding: 0 50px 0 0;
   z-index: 2;
@@ -51,13 +52,13 @@
 
 
 .nav-List ul {
-  list-style: none;
-  margin-left: 1.5em;
-  margin-top: 15em;
-}
-
-.nav-List ul li {
-  margin-top: 0.5em;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  gap: 10px;
 }
 
 .nav-List ul a,

@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $branco;
-  font-family: $montserrat;
+  font-family: $textos;
 }
 
 .container-planos h2 {
@@ -63,12 +63,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: $montserrat;
+  font-family: $textos;
 }
 
 .planos p {
   color: $sinza;
-  font-family: $montserrat;
+  font-family: $textos;
 }
 
 .container-planos ul {
@@ -81,7 +81,7 @@ p,
 li {
   color: $sinza;
   font-weight: bolder;
-  font-family: $montserrat;
+  font-family: $textos;
 }
 
 .obs {

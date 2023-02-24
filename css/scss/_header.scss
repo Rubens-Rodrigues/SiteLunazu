@@ -1,18 +1,29 @@
 header {
   position: fixed;
   width: 100vw;
-  height: 8em;
+  height: 4em;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   color: $branco;
   z-index: 4;
 }
 
-h1 {
-  height: 100%;
-  font-size: 1em;
-  font-style: italic;
+header .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo a {
+  font-family: $titulos;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
   cursor: pointer;
 }

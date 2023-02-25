@@ -12,16 +12,20 @@
 
 
 // fontes
+@import url(../../assets/fontes/Omega+Sans+Regular.ttf);
+@import url(../../assets/fontes/NexaBold.otf);
+@import url(../../assets/fontes/NexaLight.otf);
 
 @font-face {
   font-family: 'Omega';
-  src: url('../../assets/fontes/Omega+Sans+Regular.ttf') format("truetype"); font-weight: normal; font-style: normal;
+  src: local('Custon font');
+  src: url('../../assets/fontes/Omega+Sans+Regular.ttf') format("truetype"); 
 }
 @font-face {
   font-family: 'NexaBolde';
-  src: url('../../assets/fontes/Nexa\ Bold.otf') format("opentype");
+  src: url('../../assets/fontes/NexaBold.otf') format("opentype");
 }
 @font-face {
   font-family: 'NexaLight';
-  src: url('../../assets/fontes/Nexa\ Light.otf') format("opentype");
+  src: url('../../assets/fontes/NexaLight.otf') format("opentype");
 }

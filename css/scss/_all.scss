@@ -10,9 +10,8 @@
   font-weight: bold;
   font-family: $textos;
 }
-
-body {
-  background-color: $branco;
+*::-webkit-scrollbar{
+  display: none;
 }
 
 body a {

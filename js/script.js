@@ -6,10 +6,10 @@ function initNavBar() {
       this.navList = document.querySelector(navList);
       this.navLinks = document.querySelectorAll(navLinks);
       this.activeClass = "active";
-  
+
       this.handleClick = this.handleClick.bind(this);
     }
-  
+
     animateLinks() {
       this.navLinks.forEach((link, index) => {
         link.style.animation
@@ -19,17 +19,17 @@ function initNavBar() {
             }s`);
       });
     }
-  
+
     handleClick() {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animateLinks();
     }
-  
+
     addClickEvent() {
       this.mobileMenu.addEventListener("click", this.handleClick);
     }
-  
+
     init() {
       if (this.mobileMenu) {
         this.addClickEvent();
@@ -37,28 +37,27 @@ function initNavBar() {
       return this;
     }
   }
-  
+
   const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".navList",
     ".navList li"
   );
   mobileNavbar.init();
-  
-  // faz o menu hamburger sumir ao clicar fora
-  const menu = document.querySelector('.mobile-menu')
-  const navList = document.querySelector('.navList')
 
-  document.addEventListener('click', function (event) {
-    if (event.target.matches('.mobile-menu')) {
-      menu.classList.add('active');
-      navList.classList.add('active');
-    } else if (menu.classList.contains('active')) {
-      menu.classList.remove('active')
-      navList.classList.remove('active')
+  // faz o menu hamburger sumir ao clicar fora
+  const menu = document.querySelector(".mobile-menu");
+  const navList = document.querySelector(".navList");
+
+  document.addEventListener("click", function (event) {
+    if (event.target.matches(".mobile-menu")) {
+      menu.classList.add("active");
+      navList.classList.add("active");
+    } else if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+      navList.classList.remove("active");
     }
-  })
-  
+  });
 }
 initNavBar();
 
@@ -83,7 +82,6 @@ function initAnimacaoScroll() {
   window.addEventListener("scroll", animaScroll);
 }
 initAnimacaoScroll();
-
 
 // Muda color do menu fixo
 
@@ -123,8 +121,5 @@ addEventListener("load", function () {
       htm.scrollTop > 900 ? "#42567a" : "#fff";
     document.getElementById("menu-right").style.color =
       htm.scrollTop > 900 ? "#42567a" : "#fff";
-
   });
 });
-
-

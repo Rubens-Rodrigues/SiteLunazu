@@ -12,7 +12,7 @@
 
 <body>
 
-  <header>
+  <header id="header">
     <div class="logo">
       <img src="./assets/img/logo-03.png" alt="">
       <a id="logo" href="#topo">lunazu</a>
@@ -135,43 +135,37 @@
           </p>
         </div>
       </div>
-      <br>
-      <div class="carrosel">
-        <h2>Estamos constantemente introduzindo novas soluções tecnológicas para sua fazenda.</h2>
-        <div class="slider">
-          <div class="div1" style="background-image: url(./assets/img/image.png)">
-            <div class="icon">
-              <div class="icon-img">
-              <img src="./assets/img/icons8-vaca-64.png" alt="Incone vaca">
-              </div>
-              <hr class="icon-hr">
-              <p>Cadastro inteligente dos seus animais
-                <br>
-              </p>
+      <h2 id="h2-second">Estamos constantemente introduzindo novas soluções tecnológicas para sua fazenda.</h2>
+      <div class="slider">
+        <div class="slider--controls">
+          <div class="slider--control" onclick="goPrev()">&lsaquo;</div>
+          <div class="slider--control" onclick="goNext()">&rsaquo;</div>
+        </div>
+        <div class="slider--width">
+          <div class="slider--item" style="background-image: url(./assets/img/image.png);">
+            <div class="icons">
+              <img style="width: 40px;" src="./assets/img/icons8-vaca-64.png" alt="Incone de vaca">
+              <hr>
+              <p style="margin-bottom: 3%;">Cadastro inteligente dos seus animais</p>
             </div>
           </div>
-          <div style="background-image: url(./assets/img/image.png)">
-            <div class="icon">
-              <div class="icon-img">
-              <img src="./assets/img/icons8-verifique-o-dólar-48.png" alt="Incone dolar">
-              </div>
-              <hr class="icon-hr">
+          <div class="slider--item" style="background-image: url(./assets/img/image.png);">
+            <div class="icons">
+              <img src="./assets/img/icons8-verifique-o-dólar-48.png" alt="Incone de moeda">
+              <hr>
               <p>Seu financeiro cada vez mais controlado. Inclusa a emissão de notas fiscais</p>
             </div>
           </div>
-          <div style="background-image: url(./assets/img/image.png)">
-            <div class="icon">
-              <div class="icon-img">
-                <img src="./assets/img/icons8-livro-de-saúde-96.png" alt="Incone livro">
-              </div>
-              <hr class="icon-hr">
-              <p>Um prontuário com doenças, vacinas, tratamentos e muito mais para cada anima</p>
+          <div class="slider--item" style="background-image: url(./assets/img/image.png);">
+            <div class="icons">
+              <img src="./assets/img/icons8-livro-de-saúde-96.png" alt="Incone de Livro">
+              <hr>
+              <p>Um prontuário com doenças, vacinas, tratamentos e muito mais para cada animal</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <section id="beneficio" class="beneficios">

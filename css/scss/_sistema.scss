@@ -15,7 +15,8 @@
   padding: 30px;
 }
 
-.sistema h3, .sistema h2 {
+.sistema h3,
+.sistema h2 {
   color: $verde2;
 }
 .sistema p {
@@ -59,7 +60,7 @@
 }
 
 .sistema2 h3 {
-  border-bottom: 0.5px solid rgba($color: $verde, $alpha: .5);
+  border-bottom: 0.5px solid rgba($color: $verde, $alpha: 0.5);
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
@@ -76,109 +77,92 @@
 }
 
 .sistema3 h3 {
-  border-bottom: 0.5px solid  rgba($color: $verde, $alpha: .5);
+  border-bottom: 0.5px solid rgba($color: $verde, $alpha: 0.5);
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
 
-.carrosel{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#h2-second{
+  text-align: center;
+  margin-top: 4rem;
 }
 
 .slider {
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  @media screen and(max-width: 768px) {
+    height: 70vh;
+    width: 90vw;
+  }
+  @media screen and(max-width: 540px) {
+    height: 40vh;
+  }
+}
+
+.slider--width {
+  height: 100%;
   display: flex;
-  height: 20rem;
-  max-width: 70vw;
-  gap: 1rem;
-  margin: 4rem auto;
-  padding: .5rem;
-  cursor: pointer;
-  @media screen and(max-width: 800px) {
-    max-width: 100vw;
-    margin: 1rem auto;
-  }
-  @media screen and(max-width: 500px) {
-    margin: auto;
-  }
- }
-
-.slider > div {
-  flex: 1;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
-  border: 1px solid $verde;
-  @media screen and(max-width: 991px) {
-    background-size: cover;
-    
-  }
-}
-.slider > div:hover{
-  flex: 5;
-  @media screen and(max-width: 991px) {
-    background-size: contain;
-  }
+  transition: all ease 0.5s;
 }
 
-.slider > div:hover .icon{
-  opacity: 1;
-}
-
-
-.icon {
+.slider--item {
   width: 100%;
   height: 100%;
-  min-width: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.slider--controls {
+  position: absolute;
+  z-index: 99;
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider--control {
+  width: 20px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: end;
-  padding-bottom: 10px;
-  margin:  0 auto;
-  opacity: 1;
-  @media screen and(max-width: 500px) {
-    gap: 10px;
-    
+  font-size: 80px;
+  margin: 20px;
+  color: $sinza;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
   }
 }
 
-.icon p{
-  width: 50%;
-  @media screen and (max-width: 800px) {
-    font-size: .5rem;
-    padding-bottom: 1rem;
-  }
-}
-
-.div1 :nth-child(1) p{
-  padding-bottom: 1rem;
-}
-
-.icon-img {
-  width: 50%;
-  text-align: right;
-
-}
-
-.icon-hr {
-  height: 60px;
-   @media screen and (max-width: 800px) {
-    height: 40px;
-  }
-}
-
-.icon img{
+.slider--item img{
   width: 50px;
-  @media screen and (max-width: 800px) {
-    width: 30px;
-}
 }
 
+.icons hr{
+  rotate: 90deg;
+  width: 100px;
+}
 
+.slider--item .icons{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+  height: 75%;
+  width: 60%;
+  @media screen and (max-width: 620px) {
+    font-size: .6rem;
+    width: 70%;
+  }
+
+}
 
 @media screen and (max-width: 991px) {
   .sistema1,
@@ -195,12 +179,16 @@
 }
 
 @media screen and (max-width: 700px) {
-  .content-sitema h2{
+  .content-sitema h2 {
     display: block;
     color: $verde2;
     padding: 60px 0 20px 0;
     text-align: center;
     font-size: 1.8em;
+  }
+  #h2-second {
+    font-size: 1rem;
+    margin: 0;
   }
   .sistema1,
   .sistema2,

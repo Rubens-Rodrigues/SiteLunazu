@@ -14,7 +14,7 @@
 
   <header id="header">
     <div class="logo">
-      <img src="./assets/img/logo-03.png" alt="">
+      <img src="./assets/img/logo-03.png" alt="Logo lunazu">
       <a id="logo" href="#topo">lunazu</a>
     </div>
     <div class="navBar mobile-menu js-scroll">
@@ -26,7 +26,8 @@
 
   <section id="topo" class="topo">
     <h4 id="menu-right">MENU</h4>
-    <h2 class="js-scroll">SISTEMA DE GESTÃO<br>AGROPECUÁRIA</h2>
+    <img id="mouse" src="./assets/img/mouse.png" alt="incone mouse">
+    <h2 class="js-scroll">SISTEMA<br>INTELIGENTE<br>DE GESTÃO<br>AGROPECUÁRIA</h2>
     <div class="movi">
       <video autoplay muted loop preload="auto" class="backgroundMovi" poster="./assets/img/frame-video.JPG">
         <source src="./assets/video/backgroundVideo.mp4" type="video/mp4">
@@ -37,7 +38,7 @@
         <h3 id="c1">SEU AGRO</h3>
         <h3 id="c2">PODE SER</h3>
         <h3 id="c3">TUDO</h3>
-        <button id="btn-adquirir"><a href="#">Adquirir agora</a></button>
+        <button id="btn-adquirir"><a href="#">Adquira agora</a></button>
       </div>
       <div class="navList"> <!-- Menu hamburger-->
         <ul>
@@ -50,8 +51,8 @@
           <li><a href="#beneficio">
               <div class="line"></div>Benefícios
             </a></li>
-          <li><a href="#planos">
-              <div class="line"></div>Planos
+          <li><a href="#solucoes">
+              <div class="line"></div>Soluções
             </a></li>
           <li><a href="#contato">
               <div class="line"></div>Contato
@@ -59,11 +60,16 @@
         </ul>
       </div>
       <div class="nav-List">
+        <div class="lang">
+          <button>EN</button>
+          <button>PT</button>
+          <button>ES</button>
+        </div>
         <ul class="js-scroll">
           <li><a id="menu-one" href="#sobre">&#8213; <div class="line" id="line"></div> Sobre</a></li>
           <li><a id="menu-two" href="#sistema">&#8213; <div class="line" id="2line"></div> Nosso Sistema</a></li>
           <li><a id="menu-three" href="#beneficio">&#8213; <div class="line" id="3line"></div> Benefícios</a></li>
-          <li><a id="menu-four" href="#planos">&#8213; <div class="line" id="4line"></div> Planos</a></li>
+          <li><a id="menu-four" href="#solucoes">&#8213; <div class="line" id="4line"></div> Soluções</a></li>
           <li><a id="menu-five" href="#contato">&#8213; <div class="line" id="5line"></div> Contato</a></li>
         </ul>
       </div>
@@ -73,95 +79,76 @@
   <section id="sobre" class="sobre">
     <article class="content-sobre">
       <div class="description">
-        <h2 class="js-scroll">Seu agro cada vez <br> mais Tech</h2>
+        <h2 id="h2-desktop" class="js-scroll">Sua fazenda cada<br> vez mais tecnológica<br> e produtiva</h2>
+        <h2 id="h2-mobile" class="js-scroll">Sua fazenda cada vez mais tecnológica e produtiva</h2>
+        <hr>
         <div class="texto">
           <p class="js-scroll">
-            Aqui você encontrará as melhores formas de gestão para sua fazenda. Não importa o setor
-            e nem a demanda, aqui você encontra o meio mais efetivo pra controlar oq produz e, saber se isso está de
-            acordo com as pespectivas de mercado. </p>
-          <button class="js-scroll" id="btn-sobre"><a href="#">Mais detalhes</a></button>
+            A lunazu te proporciona, de maneira simples e prática, as melhores formas de gestão agropecuária.
+            Não importa o setor, muito menos a demanda, estamos preparados para dar o melhor suporte para a gestão do
+            seu negócio de
+            forma única e personalizada. Contamos com as melhores ferramentas operacionais que estão no mercado, seja
+            para gestão
+            agrícola, agropecuária de corte ou leiteira ou outra produção do ramo. </p>
+          <a class="js-scroll" id="btn-sobre" href="#">Saiba mais sobre Lunazu</a>
         </div>
       </div>
       <div class="links js-scroll">
-        <a href="./pages/pecuaria.html">1 - Pecuária</a>
-        <a>2- Lorem ipsum dolor.</a>
-        <a>3- Lorem ipsum dolor sit.</a>
-        <a>4- Lorem ipsum dolor sit.</a>
+        <a href="./pages/pecuaria.html"><img src="./assets/img/icons8-vaca-64_(1).png" alt="Incone"> Pecuária de
+          corte</a>
+        <a href="./pages/pecuaria-leite.html"><img src="./assets/img/icons8-leite-kawaii-90.png" alt="Incone"> Pecuária
+          leitera</a>
+        <a href="./pages/agricultura.html"><img src="./assets/img/icons8-trator-100.png" alt="Incone"> Agricultura</a>
+        <a href="./pages/personalizado.html"><img src="./assets/img/icons8-galinha-100.png" alt="Incone"> Setor
+          personalizado</a>
       </div>
     </article>
   </section>
 
   <section id="sistema" class="sistema">
     <div class="content-sitema">
-      <h2 class="js-scroll">Nosso sistema</h2>
-      <div class="sistema1 js-scroll">
-        <h3>Tecnologia inteligente a favor da sua fazenda</h3>
-        <hr>
-        <p>
-          Entendemos seus problemas e dos aplicativos que estão no mercado. Falta de vários elementos e automação
-          acabam não
-          atingindo o foco principal de potencializar os lucros do seu negócio. Nós fazemos isso e mais!
-        </p>
-      </div>
-      <div class="sistema2 js-scroll">
-        <div>
-          <h3>NÓS OTIMIZAMOS</h3>
+      <div class="sistemas">
+        <h2 id="lunazu-e-voce">lunazu e você</h2>
+        <h2 id="nosso-sitema-h2" class="js-scroll">Nosso sistema</h2>
+        <div class="sistema1 js-scroll">
+          <h3>Tecnologia inteligente a favor da sua fazenda</h3>
+          <hr>
           <p>
-            Através de modernas implementações do nosso sistema e treinamento de todos seus funcionários
+            Entendemos seus problemas e dos aplicativos que estão no mercado. Falta de vários elementos e automação
+            acabam não
+            atingindo o foco principal de potencializar os lucros do seu negócio. Nós fazemos isso e mais!
           </p>
         </div>
-        <div>
-          <h3>NÓS DESENVOLVEMOS</h3>
-          <p>
-            Um sistema totalmente personalizado por você que atende qualquer necessidade de um produtor rurals!
-          </p>
-        </div>
-      </div>
-      <div class="sistema3 js-scroll">
-        <div>
-          <h3>NÓS AUMENTAMOS SEUS LUCROS</h3>
-          <p>
-            através de projeções, painéis de controle e consultorias com nossos profissionais qualificados de
-            prontidão para
-            oferecer o melhor e mais moderno para sua produção.
-          </p>
-        </div>
-        <div>
-          <h3>NÓS TE AJUDAMOS A CRESCER</h3>
-          <p>
-            e crescemos juntos com você! Oferecemos toda a modernidade e comodidade para suas ações do dia-dia
-            seja em atividades de
-            campo ou administrativas. Melhorando e sempre para frente!
-          </p>
-        </div>
-      </div>
-      <h2 id="h2-second">Estamos constantemente introduzindo novas soluções tecnológicas para sua fazenda.</h2>
-      <div class="slider">
-        <div class="slider--controls">
-          <div class="slider--control" onclick="goPrev()">&lsaquo;</div>
-          <div class="slider--control" onclick="goNext()">&rsaquo;</div>
-        </div>
-        <div class="slider--width">
-          <div class="slider--item" style="background-image: url(./assets/img/image.png);">
-            <div class="icons">
-              <img style="width: 40px;" src="./assets/img/icons8-vaca-64.png" alt="Incone de vaca">
-              <hr>
-              <p style="margin-bottom: 3%;">Cadastro inteligente dos seus animais</p>
-            </div>
+        <div class="sistema2 js-scroll">
+          <div>
+            <h3>NÓS OTIMIZAMOS</h3>
+            <p>
+              Através de modernas implementações do nosso sistema e treinamento de todos seus funcionários
+            </p>
           </div>
-          <div class="slider--item" style="background-image: url(./assets/img/image.png);">
-            <div class="icons">
-              <img src="./assets/img/icons8-verifique-o-dólar-48.png" alt="Incone de moeda">
-              <hr>
-              <p>Seu financeiro cada vez mais controlado. Inclusa a emissão de notas fiscais</p>
-            </div>
+          <div>
+            <h3>NÓS DESENVOLVEMOS</h3>
+            <p>
+              Um sistema totalmente personalizado por você que atende qualquer necessidade de um produtor rurals!
+            </p>
           </div>
-          <div class="slider--item" style="background-image: url(./assets/img/image.png);">
-            <div class="icons">
-              <img src="./assets/img/icons8-livro-de-saúde-96.png" alt="Incone de Livro">
-              <hr>
-              <p>Um prontuário com doenças, vacinas, tratamentos e muito mais para cada animal</p>
-            </div>
+        </div>
+        <div class="sistema3 js-scroll">
+          <div>
+           <h3>NÓS AUMENTAMOS SEUS LUCROS</h3>
+            <p>
+              através de projeções, painéis de controle e consultorias com nossos profissionais qualificados de
+              prontidão para
+              oferecer o melhor e mais moderno para sua produção.
+            </p>
+          </div>
+          <div>
+            <h3>NÓS TE AJUDAMOS A CRESCER</h3>
+            <p>
+              e crescemos juntos com você! Oferecemos toda a modernidade e comodidade para suas ações do dia-dia
+              seja em atividades de
+              campo ou administrativas. Melhorando e sempre para frente!
+            </p>
           </div>
         </div>
       </div>
@@ -170,107 +157,71 @@
 
   <section id="beneficio" class="beneficios">
     <div class="container-beneficios">
-      <h2 class="js-scroll beneficio">BENEFÍCIOS</h2>
-      <div class="cards">
-        <div class="card js-scroll">
-          <h2>Lorem, ipsum.</h2>
-          <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
-            width="80px">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
-          <span>01</span>
+      <h4 class="js-scroll beneficios-title">Estamos constantemente introduzindo novas soluções tecnológicas para sua fazenda.</h4>
+      <div class="galery">
+        <div style="background-image: url(./assets/img/drone.jpg)">
+          <div class="descricao-div">
+            <h3>Tecnologia</h3>
+            <p>Veterinários, agrônomos, monitoramento de drones e outras implementações</p>
+          </div>
         </div>
-        <div class="card js-scroll">
-          <h2>Lorem, ipsum.</h2>
-          <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
-            width="80px">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
-          <span>02</span>
+        <div style="background-image: url(./assets/img/calc.jpg)">
+          <div class="descricao-div">
+            <h3>Usabilidade</h3>
+            <p>Personalize seu sistema de acordo com suas necessidades e pague apenas o que usar</p>
+          </div>         
         </div>
-        <div class="card js-scroll">
-          <h2>Lorem, ipsum.</h2>
-          <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
-            width="80px">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
-          <span>03</span>
-        </div>
-        <div class="card js-scroll">
-          <h2>Lorem, ipsum.</h2>
-          <img src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-gear-icon-png-image_1527934.jpg"
-            width="80px">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iusto.</p>
-          <span>04</span>
+        <div style="background-image: url(./assets/img/2colheita.jpg)">
+          <div class="descricao-div">
+            <h3>Contabilidade</h3>
+            <p>Emissão de notas online para a receita federal</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="planos" class="content-planos">
-    <div class="container-planos">
-      <h2 class="js-scroll">PLANOS CERTOS PARA VOCÊ</h2>
-      <div class="planos">
-        <div class="plano plano1 js-scroll">
-          <h3>139,90</h3>
-          <P>Ate 300 <br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
-        </div>
-        <div class="plano plano2 js-scroll">
-          <h3>179,90</h3>
-          <P>301 - 500<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
-        </div>
-        <div class="plano plano3 js-scroll">
-          <h3>320,90</h3>
-          <P>501 - 1000<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
-        </div>
-        <div class="plano plano4 js-scroll">
-          <h3>575,90</h3>
-          <P>1001 - 3000<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
-        </div>
-        <div class="plano plano5 js-scroll">
-          <h3 style="font-size: 13px;">CONSULTAR</h3>
-          <P>A partir de 3000<br>Animais</P>
-          <button><a href="#">CONTRATAR</a></button>
-        </div>
+  <section id="solucoes" class="solucoes">
+    <div class="content-solucoes">
+      <h2 id="gestao-inteligente">Gestão int</h2>
+      <div class="solucoes-description">
+        <h4>Estamos constantemente introduzindo novas soluções tecnológicas para sua fazenda.</4>
+        <p>Lorem ipsum dolor sit amet. Et asperiores esse eos sint quibusdam vel atque soluta et quod repellendus eos
+        necessitatibus consequuntur vel maxime minima ea repellat expedita. Qui vero molestiae et dolores sapiente et dolorum
+        doloremque.
+        Id deserunt ullam est explicabo voluptas quo laboriosam dolores vel nisi repellat hic animi consequatur. Et maxime
+        voluptate sit repudiandae beatae et quam galisum qui ipsum perferendis et facilis sunt qui laborum nulla.
+        </p>
       </div>
-      <ul clas js-scrolls="js-scroll">
-        <li><span style="color: #5c8a71; font-size: 25px;">&#x2714;</span> Nos planos anuais não será cobrado taxa
-          de ativação*. Preços especiais para essa modalidade**</li>
-        <li><span style="color: #5c8a71; font-size: 25px;">&#x2714;</span> Temos planos personalizado para fazendas
-          acima de 3000 animais</li>
-      </ul>
-      <div class="obs js-scroll">
-        <p>*Taxa de ativação a consultar</p>
-        <p>**Valor referente a mensalidade, no plano anual os calores são alterados.</p>
-      </div>
-
+      <div class="solucoes-img"></div>
     </div>
   </section>
 
   <section id="contato" class="contatos">
     <div class="container-contatos">
       <div class="description js-scroll">
-        <p>Lorem's ipsum.<br>consectet uradip icing</p>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Se interessou no teste gratuito ou ficou alguma dúvida? Fala com a gente!</p>
+        <p>Estamos aqui para te ajudar então assim que nos enviar um dos nossos técnicos irá falar diretamente com você.</p>
         <div class="social">
+          <h3>Confira nossas redes sociais!</h3>
+          <div class="img-icons">
           <a href="#"><img src="./assets/img/whatsapp.png" alt="Whatsapp"></a>
           <a href="#"><img src="./assets/img/instagram.png" alt="Instagram"></a>
           <a href="#"><img src="./assets/img/facebook.png" alt="Facebook"></a>
           <a href="#"><img src="./assets/img/twitter.png" alt="Twitter"></a>
+          </div>
         </div>
-        <img id="logo-footer" src="./assets/img/logo-02.png" alt="Logo lunazu">
       </div>
-
+      
       <form class="form js-scroll">
-        <h3>Envie sua mensagem <span style="color: #5c8a71; font-size: 20px;">&#9993</span></h3>
+        <img id="logo-footer" src="./assets/img/logo-branca.png" alt="Logo lunazu">
         <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required><br>
         <input type="text" placeholder="Digite um email válido" id="email" name="email" required><br>
         <input type="number" placeholder="Digite seu Telefone" id="telefone" name="telefone" required><br>
         <textarea id="mensagem" placeholder="Deixe sua mensagem" name="mensagem" required></textarea><br>
         <input type="submit" name="submit" id="submit" value="ENVIAR">
       </form>
-
+    
     </div>
     <footer class="footer">
       <p>&copy; 2023 - Lunazu - Todos os direitos reservados <a href="../pages/termos-politica-privacidade.html"

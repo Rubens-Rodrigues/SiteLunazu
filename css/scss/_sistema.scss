@@ -1,8 +1,12 @@
 .sistema {
   height: 100%;
-  background-color: $branco;
+  background-color: $fundo;
   z-index: 1;
   position: relative;
+}
+
+#nosso-sitema-h2{
+  display: none;
 }
 
 .content-sitema {
@@ -11,8 +15,26 @@
   margin: 0 0 0 15em;
   display: flex;
   flex-direction: column;
+}
+
+#lunazu-e-voce {
+  color: $branco;
+  font-size: 70px;
+  position: absolute;
+  font-family: $nexaBold !important;
+  left: 35%;
+  top: 60%;
+  @media screen and(max-width: 991px) {
+    display: none;
+  }
+}
+
+.sistemas {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 30px;
+  padding: 40px 0 10px 0;
 }
 
 .sistema h3,
@@ -24,7 +46,7 @@
 }
 
 .sistema1 {
-  height: 30%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,23 +61,25 @@
 .sistema1 h3 {
   width: 50%;
   padding: 0 30px;
-  font-size: 2em;
+  font-size: 25px;
 }
 
 .sistema1 p {
   width: 50%;
   padding: 0 30px;
+  font-size: 16px;
 }
 
 .sistema2 {
-  height: 30%;
+  height:  100%;
   display: flex;
+  align-items: center;
   padding-top: 20px;
-  gap: 20px;
+  gap: 100px;
 }
 
 .sistema2 div {
-  width: 40%;
+  width: 30%;
   padding: 10px;
 }
 
@@ -63,23 +87,35 @@
   border-bottom: 0.5px solid rgba($color: $verde, $alpha: 0.5);
   margin-bottom: 20px;
   padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.sistema2 p {
+  font-size: 14px;
 }
 
 .sistema3 {
-  height: 30%;
+  height: 100%;
   display: flex;
+  align-items: end;
   justify-content: right;
+  gap: 80px;
 }
 
 .sistema3 div {
   width: 40%;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 .sistema3 h3 {
   border-bottom: 0.5px solid rgba($color: $verde, $alpha: 0.5);
   margin-bottom: 20px;
   padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.sistema3 p {
+  font-size: 14px;
 }
 
 #h2-second{
@@ -87,90 +123,21 @@
   margin-top: 4rem;
 }
 
-.slider {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  margin: auto;
-  @media screen and(max-width: 768px) {
-    height: 70vh;
-    width: 90vw;
-  }
-  @media screen and(max-width: 540px) {
-    height: 40vh;
-  }
-}
-
-.slider--width {
-  height: 100%;
-  display: flex;
-  transition: all ease 0.5s;
-}
-
-.slider--item {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-}
-
-.slider--controls {
-  position: absolute;
-  z-index: 99;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.slider--control {
-  width: 20px;
-  height: 50px;
-  overflow: hidden;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 80px;
-  margin: 20px;
-  color: $sinza;
-  opacity: 0.5;
-  &:hover {
-    opacity: 1;
-  }
-}
-
-.slider--item img{
-  width: 50px;
-}
-
-.icons hr{
-  rotate: 90deg;
-  width: 100px;
-}
-
-.slider--item .icons{
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  float: right;
-  height: 75%;
-  width: 60%;
-  @media screen and (max-width: 620px) {
-    font-size: .6rem;
-    width: 70%;
-  }
-
-}
 
 @media screen and (max-width: 991px) {
   .sistema1,
   .sistema2,
   .sistema3 {
     justify-content: center;
+    height: 100%;
     padding: 0;
     margin: 0;
+  }
+
+  .sistemas {
+    height: auto;
+    justify-content: center;
+    padding: 35px 0 30px 0;
   }
   .content-sitema {
     width: 100vw;
@@ -179,27 +146,34 @@
 }
 
 @media screen and (max-width: 700px) {
-  .content-sitema h2 {
-    display: block;
-    color: $verde2;
-    padding: 60px 0 20px 0;
-    text-align: center;
-    font-size: 1.8em;
-  }
   #h2-second {
     font-size: 1rem;
     margin: 0;
   }
+
+  #nosso-sitema-h2{
+    display: block;
+    text-align: center;
+  }
+
+  .sistemas{
+    gap: 10px;
+  }
+
   .sistema1,
   .sistema2,
   .sistema3 {
     flex-direction: column;
     height: 100%;
+    width: 90vw;
+    align-items: center;
+    gap: 0;
   }
   .sistema1 div,
   .sistema2 div,
   .sistema3 div {
     width: 100%;
+    padding: 10px;
   }
 
   .sistema1 h3,

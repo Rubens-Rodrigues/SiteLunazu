@@ -1,6 +1,7 @@
 // Cores
 $verde: #5c8a71;
 $verde2: #156138;
+$fundo: #f4f8f6;
 $sinza: #4f4f4f;
 $amarelo: #ffd771;
 $branco: #fff;
@@ -19,5 +20,12 @@ $preto: #000;
   src: url('../assets/fontes/NexaLight.otf') format("opentype");
 }
 
+@font-face {
+  font-family: 'NexaBold';
+  src: url('../assets/fontes/NexaBold.otf') format("opentype");
+   font-weight: bold; font-style: normal;
+}
+
+$nexaBold: 'NexaBold';
 $textos: "NexaLight";
 $titulos: 'Omega';

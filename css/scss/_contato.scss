@@ -4,53 +4,64 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: $branco;
+  background-image: url(../../assets/img/fundo-contatos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
 .container-contatos {
   width: 74%;
   height: 100%;
-  margin-right: -8rem;
+  margin-right: -7rem;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #logo-footer{
-  width: 100px;
-  position: absolute;
-  left: 12em;
-  bottom: 4em;
-  @media screen and (max-width: 580px){
-    display: none;
-  }
+  width: 150px;
+  margin-bottom: 10px;
 }
 
 .container-contatos .description {
   width: 50%;
-  height: 100%;
-  padding: 50px;
+  height: 80%;
+  padding: 0 50px 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
+  gap: 40px;
 }
 
 .container-contatos p:first-of-type {
-  width: 100%;
-  font-family: $titulos;
-  font-size: 30px;
+  font-family: $nexaBold;
   font-weight: bolder;
-  color: $sinza;
+  font-size: 25px;
+  color: $branco;
 }
 
 .container-contatos p:nth-of-type(2) {
-  width: 100%;
-  color: $verde;
+  font-size: 18px;
   font-family: $titulos;
-  font-weight: bolder;
-  margin-top: -7rem;
+}
+
+.social {
+  width: 80%;
+  text-align: center;
+  padding-right: 60px;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.social > .img-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .social img {
@@ -63,49 +74,37 @@
   }
 }
 
-.social {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-  justify-content: center;
-}
-
 .form {
   width: 40%;
-  height: 400px;
+  height: 500px;
   margin-right: 3rem;
   padding: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
-  padding: 30px 20px;
-  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.233);
+  padding: 5px 10px;
 }
 
-.form h3 {
-  color: $sinza;
-  margin-bottom: 10px;
-  overflow-y: hidden;
-  font-family: $titulos !important;
-}
 
 .form input {
-  width: 100%;
-  color: $sinza;
+  width: 300px;
+  color: $branco;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 50px;
   border: none;
-  background-color: rgba(204, 204, 204, 0.226);
+  background-color: $branco
 }
 
 .form textarea {
-  width: 100%;
-  height: 60px;
+  width: 300px;
+  height: 150px;
   padding: 10px;
   color: $sinza;
   border: none;
-  border-radius: 10px;
-  background-color: rgba(204, 204, 204, 0.226);
+  border-radius: 20px;
+  background-color: $branco
 }
 
 textarea:focus,
@@ -114,29 +113,34 @@ input:focus {
 }
 
 #submit {
-  width: 150px;
-  border-radius: 5px;
+  width: 105px;
+  position: absolute;
+  left: 55px;
+  bottom: 0px;
+  border-radius: 50px;
   color: $branco;
-  border: none;
+  border: 1px solid $branco;
   font-weight: bolder;
-  background-color: $verde;
+  background-color: transparent;
   cursor: pointer;
   box-shadow: 0 0 5px 0px rgb(0, 0, 0);
   overflow-y: hidden;
   &:hover {
-    background: none;
-    border: 2px solid $verde;
-    color: $verde;
+    background: $branco;
+    color: $preto;
     box-shadow: none;
+  }
+  @media screen and(max-width: 580px) {
+    left: 50px;
   }
 }
 
 .footer {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   bottom: 0;
   padding: 10px;
-  background-color: $branco;
+  background-color: #1e1e1e1e;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -161,7 +165,6 @@ input:focus {
 @media screen and (max-width: 991px) {
   .container-contatos {
     width: 100%;
-    overflow: hidden;
     margin: 0;
   }
 }
@@ -176,18 +179,25 @@ input:focus {
 }
 
 @media screen and (max-width: 580px) {
+  .contatos {
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+  }
+  
   .container-contatos {
     width: 100vw;
-    height: auto;
+    height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 40px 0 0 0;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
   }
+
   .container-contatos .description {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 20px;
     margin: 0;
     justify-content: flex-start;
@@ -196,16 +206,18 @@ input:focus {
     margin: 0;
   }
   .social {
-    margin-top: 30px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
   }
 
   .form {
-    width: 90%;
-    height: auto;
+    width: 100%;
+    height: 450px;
     margin: 0;
-    padding: 20px;
-    justify-content: stretch;
-    align-items: center;
+    padding: 0;
   }
 
   .form h3 {
@@ -219,11 +231,12 @@ input:focus {
   }
 
   .footer {
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 20px;
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin: 0;
   }

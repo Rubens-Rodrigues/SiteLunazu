@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.397);
+  background-color: rgba($color: $preto, $alpha: .45);
 }
 
 .backgroundMovi {
@@ -26,18 +26,20 @@
   top: 0;
   height: 100vh;
   width: 100vw;
-  margin: auto;
+  margin: 120px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 85px;
   color: $branco !important;
   text-align: center;
 }
 
 .items h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  line-height: 103px;
+  overflow: hidden;
 }
 
 .topo h4 {
@@ -61,7 +63,7 @@
 
 #c3 {
   width: 100%;
-  margin-right: -4em;
+  margin-right: -2em;
 }
 
 button a {
@@ -69,13 +71,14 @@ button a {
   color: $branco;
   padding: 0.5em 1.1em;
   border-radius: 20px;
+  letter-spacing: 2px;
 }
 
 #btn-adquirir {
-  margin-bottom: -10em;
   margin-top: 5em;
-  margin-right: -45em;
-  width: 12em;
+  margin-right: -30em;
+  width: 163px;
+  height: 41px;
   padding: 0.6em;
   border-radius: 20px;
   border: 1px solid $branco;
@@ -99,9 +102,22 @@ button a {
   margin-left: 10em;
   text-align: left;
   color: $branco;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24PX;
+  font-weight: 700;
+  font-family: $textos;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+
+#mouse{
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  width: 35px;
+  opacity: .7;
+  @media screen and (max-width: 991px){
+    display: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -121,7 +137,7 @@ button a {
   }
 
   .items {
-    font-size: 4rem;
+    margin: 0 auto;
   }
 
   #btn-adquirir {
@@ -141,6 +157,9 @@ button a {
   }
   .items {
     font-size: 3rem;
+  }
+  .items h3{
+    line-height: 55px;
   }
 }
 

@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background-image: url(../assets/img/colheita.jpg);
+  background-image: url(../../assets/img/section-sobre.jpg);
   background-size: cover;
   background-position: 70%;
   object-fit: cover;
@@ -22,40 +22,58 @@
 
 .description {
   width: 73%;
-  height: 400px;
-  padding: 1em;
+  height: 300px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-right: -7em;
+  margin-top: 0;
+}
+
+#h2-desktop{
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+#h2-mobile{
+  display: none;
+}
+
+.description hr{
+  width: .5px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
 }
 
 .description .texto {
-  width: 48%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
-  gap: 10px;
+  justify-content: left;
 }
 .description p {
   overflow: hidden;
   letter-spacing: 1px;
   color: $branco;
+  font-size: 16px;
   font-family: $textos;
   font-weight: normal;
+  width: 90%;
 }
 
 #btn-sobre {
   margin-top: 1em;
-  width: 13em;
-  padding: 0.6em;
+  width: 210px;
+  padding: .4rem;
   border-radius: 20px;
   border: 1px solid $branco;
-  background: none;
   font-family: $titulos !important;
-  letter-spacing: 1px;
   color: $branco;
+  text-align: center;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: all 1s;
   &:hover {
@@ -84,8 +102,13 @@
   border: 0.1em solid rgba(255, 255, 255, 0.26);
   font-family: $textos;
   color: $branco;
+  letter-spacing: 1.5px;
   &:hover {
     background-color: rgba(255, 255, 255, 0.322);
+  }
+  img{
+    width: 25px;
+    margin-right: 10px;
   }
 }
 
@@ -116,17 +139,14 @@
   .description {
     width: 100%;
     padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
   }
 
   .description .texto {
     width: 70%;
   }
 
-  .description h2 {
-    margin: 0;
+  .description hr {
+    left: 40%;
   }
 
   .links {
@@ -141,20 +161,41 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .sobre {
     animation: animeBackground 100s alternate infinite;
   }
 
   .description {
     margin: 0;
-    padding: 1em;
+    padding: 0;
     height: auto;
+    flex-direction: column;
   }
 
+  .description hr {
+    display: none;
+  }
+
+  #h2-desktop{
+    display: none;
+  }
+  
+  #h2-mobile{
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    padding: 40px 0 15px 0;
+    width: 90vw;
+    text-align: center;
+  }
+  
   .description .texto {
     width: 90%;
-    font-size: 0.8em;
+    p{
+      width: 100%;
+      height: auto;
+    }
   }
   .links {
     width: 100%;
@@ -167,6 +208,7 @@
   .links a {
     justify-content: flex-start;
     padding-left: 10px;
+    height: 4rem;
   }
 
   .links :nth-child(4) {

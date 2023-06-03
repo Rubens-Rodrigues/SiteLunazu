@@ -1,0 +1,1000 @@
+.leiteira-topo {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../assets/img/fundo-pec-leitera.jpg);
+  background-size: cover;
+  animation: animeBackground 50s alternate infinite;
+}
+
+.backdrop {
+  backdrop-filter: brightness(50%);
+}
+
+.leiteira-topo-content {
+  height: 100%;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 0 100px 0 300px;
+  @media screen and(max-width: 1200px) {
+    padding: 40px;
+  }
+  @media screen and(max-width: 991px) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  @media screen and(max-width: 540px) {
+    padding: 10px;
+  }
+}
+
+.menus h4 {
+  position: fixed;
+  right: 30px;
+  top: 20em;
+  rotate: 90deg;
+  letter-spacing: 2px;
+  z-index: 2;
+  @media screen and(max-width: 991px) {
+    display: none;
+  }
+}
+
+.leiteira-topo-content h4 {
+  font-size: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  text-align: justify;
+  width: 80%;
+  letter-spacing: 5px;
+  @media screen and(max-width: 991px) {
+    width: 100%;
+    font-size: 60px;
+  }
+  @media screen and(max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and(max-width: 360px) {
+    font-size: 30px;
+  }
+}
+
+.leiteira-topo-content :nth-child(2) {
+  margin-top: -80px;
+  letter-spacing: 7px;
+  @media screen and(max-width: 991px) {
+    margin-top: -180px;
+  }
+  @media screen and(max-width: 500px) {
+    margin-top: -90px;
+  }
+  @media screen and(max-width: 410px) {
+    margin-top: -50px;
+  }
+  @media screen and(max-width: 350px) {
+    margin-top: -10px;
+  }
+}
+
+.leiteira-topo-content p {
+  font-size: 16px;
+  font-family: $titulos;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: justify;
+  width: 80%;
+  @media screen and(max-width: 991px) {
+    width: 100%;
+  }
+}
+
+#btn-leiteira {
+  text-align: center;
+  width: 160px;
+  padding: 0.6em;
+  border-radius: 20px;
+  border: 1px solid $branco;
+  background: none;
+  color: $branco;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-family: $nexaBold;
+  cursor: pointer;
+  transition: all 1s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+  }
+}
+
+.leiteira-solucoes {
+  background-color: $fundo;
+  padding-bottom: 50px;
+}
+
+.leiteira-solucoes-content {
+  height: 100%;
+  width: 70%;
+  min-height: 110vh;
+  margin: 0 0 0 250px;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  display: flex;
+  position: relative;
+  &::after {
+    content: "*Somente em planos selecionados";
+    position: absolute;
+    color: $preto;
+    left: 5px;
+    bottom: 0;
+    font-size: 12px;
+  }
+  @media screen and(max-width: 991px) {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.leiteira-content-left p,
+.leiteira-content-right p {
+  color: $preto;
+  font-style: normal;
+}
+
+.leiteira-content-left {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 1px;
+    height: 90%;
+    background-color: #ccc;
+  }
+  @media screen and(max-width: 768px) {
+    justify-content: space-evenly;
+    min-height: auto;
+    padding-top: 20px;
+  }
+}
+
+.leiteira-content-left p {
+  width: 70%;
+  font-size: 30px;
+  font-family: $nexaBold;
+  @media screen and(max-width: 768px) {
+    text-align: center;
+  }
+  @media screen and(max-width: 520px) {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+.leiteira-content-left img {
+  width: 275px;
+  @media screen and(max-width: 520px) {
+    width: 200px;
+  }
+}
+
+.leiteira-content-right {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0 10px;
+  color: $preto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and(max-width: 768px) {
+    padding: 40px;
+    justify-content: space-evenly;
+  }
+  @media screen and(max-width: 520px) {
+    padding: 0;
+  }
+}
+
+.leiteira-content-right h4 {
+  font-size: 16px;
+  font-family: $titulos;
+  font-style: normal;
+  width: 80%;
+  color: $preto;
+  @media screen and(max-width: 768px) {
+    text-align: center;
+  }
+  @media screen and(max-width: 520px) {
+    font-size: 14px;
+    width: 90%;
+  }
+}
+
+.leiteira-content-right .descricao {
+  display: flex;
+  position: relative;
+}
+
+.leiteira-content-right .descricao > div {
+  width: 90%;
+  padding: 0 0 20px 40px;
+  @media screen and(max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and(max-width: 500px) {
+    padding: 0 0 0 10px;
+  }
+}
+
+.leiteira-content-right .descricao span {
+  color: $verde2;
+  font-size: 50px;
+  font-family: $nexaBold;
+  font-style: normal;
+  padding: 10px;
+  @media screen and(max-width: 520px) {
+    font-size: 30px;
+    padding: 5px;
+  }
+}
+
+.leiteira-content-right .descricao h3 {
+  color: $verde2;
+  font-family: $nexaBold;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.leiteira-content-right .descricao p {
+  font-size: 12px;
+  font-family: $titulos;
+  font-style: normal;
+}
+
+.alert {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  bottom: 20px;
+  background-color: $verde2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and(max-width: 768px) {
+    text-align: center;
+  }
+  @media screen and(max-width: 520px) {
+    justify-content: center;
+    padding: 0 10px 30px 10px;
+    height: auto;
+  }
+}
+
+.alert p {
+  font-family: $nexaBold;
+  font-style: normal;
+  letter-spacing: 1px;
+  @media screen and(max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.alert a {
+  background-color: $fundo;
+  color: $verde2;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: $nexaBold;
+  font-style: normal;
+  &:hover {
+    color: $branco;
+    border: 1px solid $branco;
+    background: transparent;
+  }
+  @media screen and(max-width: 768px) {
+    font-size: 12px;
+    padding: 5px;
+  }
+  @media screen and(max-width: 520px) {
+    width: 30%;
+    position: absolute;
+    bottom: 5px;
+    left: 35%;
+  }
+}
+
+.alert img {
+  width: 50px;
+  padding: 10px;
+  background-color: $verde;
+  border-radius: 50%;
+  @media screen and(max-width: 520px) {
+    margin-top: 25px;
+  }
+}
+
+.leiteira-beneficios {
+  min-height: 100vh;
+  background-color: $fundo;
+}
+
+.leiteira-beneficios-content {
+  height: 100%;
+  width: 70%;
+  margin: 0 0 50px 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  @media screen and(max-width: 991px) {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+#lunazu-e-voce-pec-leit {
+  color: $branco;
+  font-size: 70px;
+  position: absolute;
+  font-family: $nexaBold !important;
+  left: 25%;
+  top: 18%;
+  @media screen and(max-width: 991px) {
+    display: none;
+  }
+}
+
+.leiteira-beneficios-content h2,
+h3 {
+  font-family: $nexaBold;
+  color: $preto;
+  font-style: normal;
+}
+
+.leiteira-beneficios h2 {
+  font-size: 30px;
+  width: 50%;
+  @media screen and(max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and(max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+.leiteira-beneficios-content p {
+  color: $preto;
+}
+
+.beneficio1 p,
+.beneficio2 p,
+.beneficio3 p,
+.beneficio4 p,
+.beneficio5 p {
+  font-style: normal;
+}
+
+.beneficio1 h3,
+.beneficio2 h3 {
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(123, 255, 0, 0.37);
+  @media screen and(max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.beneficio1 p,
+.beneficio2 p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.leiteira-beneficios-content .beneficio1 {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+  @media screen and(max-width: 768px) {
+    justify-content: center;
+    padding: 0;
+  }
+  @media screen and(max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.leiteira-beneficios-content .beneficio2 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 40px 20px;
+  gap: 30px;
+  position: relative;
+  @media screen and(max-width: 768px) {
+    justify-content: center;
+    padding: 0 0 40px 0;
+  }
+  @media screen and(max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.beneficio2 h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  color: $preto;
+  @media screen and(max-width: 480px) {
+    font-size: 10px;
+  }
+}
+
+.beneficio1 > div,
+.beneficio2 > div {
+  width: 40%;
+  @media screen and(max-width: 768px) {
+    width: 50%;
+  }
+  @media screen and(max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.beneficio3 {
+  display: flex;
+  gap: 50px;
+  padding: 50px 50px 10px 50px;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width: 650px) {
+    gap: 0;
+    padding: 30px 0;
+  }
+  @media screen and(max-width: 460px) {
+    flex-direction: column-reverse;
+    h3 {
+      margin-top: 10px;
+    }
+  }
+}
+
+.beneficio3 h3,
+.beneficio4 h3,
+.beneficio5 h3 {
+  color: $verde2;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.beneficio3 > div,
+.beneficio4 > div,
+.beneficio5 > div {
+  width: 50%;
+  @media screen and(max-width: 650px) {
+    width: 70%;
+  }
+  @media screen and(max-width: 460px) {
+    width: 90%;
+  }
+}
+
+.beneficio4 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  padding: 10px 50px;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width: 650px) {
+    gap: 20px;
+    padding: 30px 0;
+  }
+  @media screen and(max-width: 460px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.beneficio5 {
+  display: flex;
+  gap: 50px;
+  padding: 20px 50px;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and(max-width: 650px) {
+    gap: 10px;
+    padding: 30px 0;
+  }
+  @media screen and(max-width: 460px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.beneficio3 img,
+.beneficio4 img,
+.beneficio5 img {
+  width: 350px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.beneficio3 a,
+.beneficio4 a,
+.beneficio5 a {
+  color: $preto;
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  font-family: $nexaBold;
+  border-bottom: 1px solid $preto;
+  font-size: 14px;
+  @media screen and(max-width: 460px) {
+    right: 0;
+  }
+}
+
+.leiteira-planos {
+  height: 100%;
+  background-color: $fundo;
+}
+
+.leiteira-planos-content {
+  height: 100%;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 0 50px 250px;
+  padding: 50px;
+  display: flex;
+  position: relative;
+  @media screen and(max-width: 991px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+  @media screen and(max-width: 580px) {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 20px 0 20px 0;
+  }
+}
+
+.descricao-planos {
+  width: 60%;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  font-style: normal;
+  @media screen and(max-width: 768px) {
+    padding: 0 30px;
+  }
+  @media screen and(max-width: 680px) {
+    padding: 0 10px;
+  }
+  @media screen and(max-width: 580px) {
+    width: 90%;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+}
+
+.descricao-planos h2 {
+  color: $preto;
+  font-family: $nexaBold;
+  @media screen and(max-width: 580px) {
+    text-align: center;
+  }
+}
+
+.descricao-planos p {
+  font-family: $titulos;
+  color: $preto;
+  font-size: 14px;
+}
+
+.card-planos {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  @media screen and(max-width: 580px) {
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
+
+.card-planos > div {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  @media screen and(max-width: 580px) {
+    width: 80%;
+  }
+}
+
+.card-planos h3 {
+  color: $branco;
+  font-family: $nexaBold;
+}
+
+.leiteira-planos #plano1 {
+  background-image: url(../assets/img/leite-plano-basic.png);
+  background-size: cover;
+}
+.leiteira-planos #plano2 {
+  background-image: url(../assets/img/leite-plano-confort.png);
+  background-size: cover;
+}
+.leiteira-planos #plano3 {
+  background-image: url(../assets/img/leite-plano-exclusive.png);
+  background-size: cover;
+}
+
+.planos {
+  position: absolute;
+  width: 90%;
+  height: 83%;
+  display: none;
+  font-style: normal;
+  z-index: 9;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b9;
+    z-index: -1;
+  }
+  @media screen and(max-width: 991px) {
+    width: 98%;
+    height: 95%;
+    left: 1%;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 660px) {
+    height: 100vh;
+  }
+
+  @media screen and(max-width: 500px) {
+    height: 100%;
+  }
+}
+
+.fechar {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 30px;
+  font-family: $nexaBold;
+  cursor: pointer;
+  z-index: 9 !important;
+}
+
+.leiteira-planos #basic {
+  background-image: url(../assets/img/leite-plano-basic.png);
+  background-size: cover;
+  padding: 30px;
+  display: none;
+  @media screen and(max-width: 660px) {
+    padding-top: 50px;
+  }
+  @media screen and(max-width: 500px) {
+    height: auto;
+    padding-bottom: 250px;
+  }
+}
+
+.leiteira-planos #confort {
+  background-image: url(../assets/img/leite-plano-confort.png);
+  background-size: cover;
+  padding: 25px;
+  display: none;
+  @media screen and(max-width: 500px) {
+    height: auto;
+    padding-bottom: 200px;
+  }
+}
+
+.leiteira-planos #exclusive {
+  background-image: url(../assets/img/leite-plano-exclusive.png);
+  background-size: cover;
+  padding: 25px;
+  display: none;
+  @media screen and(max-width: 660px) {
+    padding: 25px 0 25px 10px;
+  }
+}
+
+.plano-basic-items img,
+.plano-confort-items img,
+.plano-exclusive-items img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  @media screen and(max-width: 660px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+#basic h2,
+#confort h2,
+#exclusive h2 {
+  font-size: 26px;
+  font-family: $nexaBold;
+  padding-left: 20px;
+  @media screen and(max-width: 660px) {
+    font-size: 20px;
+  }
+}
+
+#basic h4,
+#confort h4,
+#exclusive h4 {
+  letter-spacing: 1px;
+  padding-left: 20px;
+  @media screen and(max-width: 660px) {
+    font-size: 16px;
+  }
+}
+
+.plano-basic-items,
+.plano-confort-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  @media screen and(max-width: 660px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.plano-exclusive-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @media screen and(max-width: 660px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.plano-basic-items ul,
+.plano-confort-items ul,
+.plano-exclusive-items ul {
+  width: 50%;
+  @media screen and(max-width: 660px) {
+    width: 100%;
+  }
+}
+
+.plano-basic-items ul li,
+.plano-confort-items ul li,
+.plano-exclusive-items ul li {
+  padding: 3px;
+  font-size: 14px;
+  padding: 12px 0 0 25px;
+  position: relative;
+  font-family: $titulos;
+  font-style: normal;
+  font-weight: 400;
+  @media screen and(max-width: 660px) {
+    font-size: 12px;
+  }
+}
+
+.plano-basic-items > div {
+  position: absolute;
+  bottom: 80px;
+  right: 70px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $branco;
+  }
+  a {
+    border: 1px solid $branco;
+    padding: 7px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: $nexaBold;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+  }
+  @media screen and(max-width: 660px) {
+    right: 0;
+    bottom: 20px;
+  }
+  @media screen and(max-width: 500px) {
+    bottom: 100px;
+    right: 10%;
+    text-align: center;
+  }
+}
+
+.plano-confort-items > div {
+  position: absolute;
+  bottom: 25px;
+  right: 70px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $branco;
+    font-size: 16px;
+    @media screen and(max-width: 660px) {
+      font-size: 14px;
+    }
+  }
+  a {
+    border: 1px solid $branco;
+    padding: 5px 25px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: $nexaBold;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+    @media screen and(max-width: 660px) {
+      font-size: 14px;
+    }
+  }
+  @media screen and(max-width: 660px) {
+    right: 0px;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    @media screen and(max-width: 500px) {
+      bottom: 100px;
+    }
+  }
+}
+
+.plano-exclusive-items > div {
+  position: absolute;
+  bottom: 25px;
+  right: 70px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $branco;
+    font-size: 14px;
+    @media screen and(max-width: 660px) {
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+  a {
+    border: 1px solid $branco;
+    padding: 4px 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: $nexaBold;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+    @media screen and(max-width: 660px) {
+      font-size: 12px;
+    }
+  }
+  @media screen and(max-width: 660px) {
+    right: 0px;
+    bottom: 20px;
+    align-items: flex-end;
+    padding-right: 5px;
+  }
+  @media screen and(max-width: 500px) {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    align-items: center;
+    bottom: 100px;
+  }
+}
+
+.plano-confort-items p,
+.plano-exclusive-items p {
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-family: $titulos;
+  left: 15px;
+  bottom: 3px;
+  position: absolute;
+  @media screen and(max-width: 660px) {
+    font-size: 7px;
+    bottom: 10px;
+  }
+}
+
+#venha-para-lunazu {
+  color: $preto;
+  text-align: center;
+  font-size: 30px;
+  font-family: $nexaBold;
+  font-style: normal;
+  margin-bottom: 100px;
+  @media screen and(max-width: 660px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.urgencia {
+  width: 75%;
+  text-align: center;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h3 {
+    color: $branco;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  a {
+    border: 1px solid $branco;
+    border-radius: 20px;
+    font-size: 14px;
+    font-style: normal;
+    padding: 3px 15px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.contato-leit {
+  background-color: #1e1e1e !important;
+  background-image: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+  <title>Lunazu</title>
+</head>
+
+<body>
+  <section class="landing">
+    <a href="https://www.lunazu.com"><img class="logo" src="../assets/img/logo-branca.png" alt="Logo"></a>
+
+    <div class="landing-descricao">
+      <h1>Participe da evolução,<br> venha para a Lunazu!</h1>
+      <p>
+        Leve tecnologia e melhoria de verdade 8para sua fazenda. Aumente seus lucros e evolua para um patamar mais
+        produtivo com
+        tecnologia e metodologia utilizada em países de primeiro mundo.
+        <br>
+        <br>
+        Seja pequeno, grande ou médio produtor, nós evoluímos de verdade o seu negócio. Preencha seus dados para
+        entrarmos em
+        contato com você para juntos entendermos como podemos aumentar seus lucros e produtividade com nosso time de
+        especialistas.
+      </p>
+      <h3>Ficou alguma dúvida?</h3>
+      <h4>Acesse nosso <a href="https://www.lunazu.com" target="_blank" rel="noopener noreferrer">site institucional</a>
+        ou fale diretamente <br> com nosso <a href="https://wa.me/message/B4JJ4S6DPT4VD1" target="_blank"
+          rel="noopener noreferrer">canal de
+          atendimento.</a></h4>
+    </div>
+
+    <div class="landing-form">
+      <h3>Já é Cadastrado? Faça o <a href="https://pec.lunazu.com" target="_blank" rel="nooperner noreferrer"> Login</a>
+      </h3>
+      <h4>Entraremos em contato com você após preencher seus dados</h4>
+      
+      <form action="../contato2.php" method="POST">
+        <input type="text" id="nome" name="nome" placeholder="Nome*" required>
+        <input type="email" id="email" name="email" placeholder="E-mail*" required>
+        <input type="number" id="telefone" name="telefone" placeholder="Celular* (Preferência WhatsApp) " required>
+        <input type="text" id="posicao" name="posicao" placeholder="Qual sua posição na fazenda?" required>
+        <textarea id="mensagem" name="mensagem" rows="2" required
+          placeholder="Usa atualmente algum aplicativo de gestão? Se sim qual?"></textarea>
+        <p>Segmento(s) que seu negócio segue*:</p>
+        <div class="checkbox-group">
+          <div>
+            <label>
+              <input type="checkbox" name="segmento[]" value="Pecuária Leiteira">
+              Pecuária Leiteira
+            </label>
+            <label>
+              <input type="checkbox" name="segmento[]" value="Pecuária de Corte">
+              Pecuária de Corte
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="segmento[]" value="Agricultura">
+              Agricultura
+            </label>
+            <label>
+              <input type="checkbox" name="segmento[]" value="Outros">
+              Outros
+            </label>
+          </div>
+        </div>
+        <p id="required">*Campos obrigatórios</p>
+        <button type="submit" name="submit" value="enviar">Teste grátis</button>
+      </form>
+
+    </div>
+  </section>
+
+  <script src="../js/script.js"></script>
+</body>

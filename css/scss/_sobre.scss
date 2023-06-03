@@ -30,19 +30,20 @@
   margin-top: 0;
 }
 
-#h2-desktop{
+#h2-desktop {
   width: 50%;
   height: 60%;
   display: flex;
   justify-content: center;
+  font-family: $nexaBold;
 }
 
-#h2-mobile{
+#h2-mobile {
   display: none;
 }
 
-.description hr{
-  width: .5px;
+.description hr {
+  width: 0.5px;
   height: 300px;
   position: absolute;
   left: 50%;
@@ -59,15 +60,15 @@
   letter-spacing: 1px;
   color: $branco;
   font-size: 16px;
-  font-family: $textos;
+  font-family: $titulos;
   font-weight: normal;
   width: 90%;
 }
 
 #btn-sobre {
   margin-top: 1em;
-  width: 210px;
-  padding: .4rem;
+  width: 250px;
+  padding: 0.4rem;
   border-radius: 20px;
   border: 1px solid $branco;
   font-family: $titulos !important;
@@ -91,7 +92,7 @@
   overflow: hidden;
 }
 
-.links a{
+.links a {
   height: 5em;
   width: 240px;
   display: flex;
@@ -100,18 +101,17 @@
   cursor: pointer;
   transition: all 1s;
   border: 0.1em solid rgba(255, 255, 255, 0.26);
-  font-family: $textos;
+  font-family: $titulos;
   color: $branco;
   letter-spacing: 1.5px;
   &:hover {
     background-color: rgba(255, 255, 255, 0.322);
   }
-  img{
+  img {
     width: 25px;
     margin-right: 10px;
   }
 }
-
 
 @media screen and (min-width: 1380px) {
   .description {
@@ -177,22 +177,23 @@
     display: none;
   }
 
-  #h2-desktop{
+  #h2-desktop {
     display: none;
   }
-  
-  #h2-mobile{
+
+  #h2-mobile {
     display: block;
     font-size: 18px;
+    font-family: $nexaBold;
     letter-spacing: 1.2px;
     padding: 40px 0 15px 0;
     width: 90vw;
     text-align: center;
   }
-  
+
   .description .texto {
     width: 90%;
-    p{
+    p {
       width: 100%;
       height: auto;
     }

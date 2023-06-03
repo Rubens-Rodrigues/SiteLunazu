@@ -1,7 +1,6 @@
 .beneficios {
   width: 100%;
   height: 100%;
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +14,7 @@
   width: 74%;
   height: 100%;
   margin-right: -7rem;
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,14 +22,14 @@
 }
 
 .beneficios-title {
-  color: $verde;
-  font-size: 20px;
+  color: $preto;
+  font-size: 24px;
   font-family: $nexaBold;
-  width: 30%;
+  width: 60%;
   position: absolute;
   left: 20px;
   @media screen and(max-width: 991px) {
-    font-size: 18px;   
+    font-size: 18px;
     width: 40%;
   }
   @media screen and(max-width: 768px) {
@@ -50,6 +50,9 @@
   margin: 10% auto;
   @media screen and(max-width: 800px) {
     max-width: 100%;
+  }
+  @media screen and(max-width: 500px) {
+    height: 90vh;
   }
 }
 
@@ -77,11 +80,11 @@
   h3 {
     position: relative;
     color: rgba($color: $branco, $alpha: 0.6);
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1.5px;
     font-family: $nexaBold;
     padding-bottom: 5px;
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       bottom: 0;
@@ -89,9 +92,6 @@
       width: 150px;
       height: 2px;
       background-color: $verde;
-    }
-    @media screen and(max-width: 580px) {
-      font-size: 12px;
     }
   }
   p {
@@ -101,15 +101,18 @@
     letter-spacing: 1.5px;
     font-family: $nexaBold;
     display: none;
-    transition: .8s;
+    transition: 0.8s;
   }
+}
+.descricao-div .p2-galery {
+  font-family: $titulos;
 }
 
 .descricao-div:hover h3::before {
   background-color: $branco;
 }
 
-.descricao-div:hover p{
+.descricao-div:hover p {
   display: block;
 }
 
@@ -118,9 +121,4 @@
     margin: 0;
     width: 90%;
   }
-}
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 420px) {
 }

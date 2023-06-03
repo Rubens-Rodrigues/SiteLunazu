@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
 
   <title> Lunazu - Pecuária</title>
 </head>
@@ -14,57 +14,482 @@
 <body>
   <header class="pecuaria-header">
     <div class="logo">
-      <img src="../assets/img/logo-03.png" alt="">
-      <h1>Lunazu</h1>
+      <a id="logo" href="https://www.lunazu.com/"><img src="../assets/img/logo-branca.png" alt="Logo"></a>
     </div>
+    <h3 class="login">Já é Cadastrado? Faça o <a href="https://pec.lunazu.com" target="_blank"
+        rel="nooperner noreferrer">
+        Login</a></h3>
     <div class="navBar mobile-menu js-scroll">
-      <h3><a id="a1" href="../index.html"><div class="line"></div>HOME</a></h3>
+      <div id="line1" class="line1"></div>
+      <div id="line2" class="line2"></div>
+      <div id="line3" class="line3"></div>
     </div>
   </header>
 
-  <div style="padding-right: 10px;" class="nav-List js-scroll pec-h2">
-    <h2>Pecuária</h2>
-  </div>  
-  
-  <section class="pecuaria-container">
-    <div class="pecuaria-descricao js-scroll">
-      <h2>O melhor Para a sua <br> Pecuária</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas temporibus eius ad qui in quasi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, voluptatum?
-      </p>
+  <div class="menus" id="topo">
+    <h4 id="menu-right">MENU</h4>
+    <div class="navList"> <!-- Menu hamburger-->
+      <ul>
+        <li><a style="text-decoration: underline;" href="https://pec.lunazu.com" target="_blank"
+            rel="nooperner noreferrer">LOGIN</a></li>
+        <li><a href="/quem-somos">Quem somos</a></li>
+        <li><a href="/pecuaria-leiteira">Pecuária Leiteira</a></li>
+        <li><a href="/pecuaria">Pecuária de Corte</a></li>
+        <li><a href="/agricultura">Agricultura</a></li>
+        <li><a href="/personalizado">Sistemas Especiais </a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
     </div>
-    <div class="pecuaria-items js-scroll">
-      <div class="pecuaria-item" >
-        <span>1</span>
-        <h3>Bovinos</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, facilis.
-        </p>
+    <div class="nav-List">
+      <div class="lang">
+        <button id="lang1">EN</button>
+        <button id="lang2">PT</button>
+        <button id="lang3">ES</button>
       </div>
-      <div class="pecuaria-item">
-        <span>2</span>
-        <h3>Caprinos</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, facilis.
+      <ul class="js-scroll">
+        <li>
+          <div class="line" id="line"></div><a id="menu-one" href="#topo">Pecuária de corte</a>
+        </li>
+        <li>
+          <div class="line" id="2line"></div><a id="menu-two" href="#solucoes">Soluções</a>
+        </li>
+        <li>
+          <div class="line" id="3line"></div><a id="menu-three" href="#beneficio">Benefícios</a>
+        </li>
+        <li>
+          <div class="line" id="4line"></div><a id="menu-four" href="#planos">Planos</a>
+        </li>
+        <li>
+          <div class="line" id="5line"></div><a id="menu-five" href="#contato">Contatos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="pecuaria-topo">
+    <div class="backdrop">
+      <div class="pecuaria-conteudo">
+        <h4>PECUÁRIA</h4>
+        <h4>DE CORTE</h4>
+        <p class="js-scroll">
+          Para a pecuária de corte apresentamos um sistema completo para cada bovino, desde o controle sanitário sobre
+          as vacinas e medicações até mesmo sobre o aprimoramento genético do gado. Fora isso, há outras ferramentas
+          como o controle da nutrição, da reprodução e até mesmo do pasto.
+          <br>
+          <br>
+          Aqui se pode cortar o gado, até mesmo cortar os gastos mas nunca o lucro!!
         </p>
+        <a class="js-scroll" id="btn-pecuaria" href="/contato" target="_blank" rel="noopener noreferrer">Teste grátis</a>
       </div>
-      <div class="pecuaria-item">
-        <span>3</span>
-        <h3>Suínos</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, facilis.
-        </p>
+    </div>
+  </section>
+
+  <section class="pecuaria-solucoes" id="solucoes">
+    <div class="pecuaria-solucoes-content">
+      <div class="pecuaria-content-left">
+        <p>Software para gestão de propriedades com ênfase em pecuária</p>
+        <img src="../assets/img/img-pecua-soluc.png" alt="Imagem vaquinha">
       </div>
-      <div class="pecuaria-item">
-        <span>4</span>
-        <h3>Equinos</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, facilis.
-        </p>
+      <div class="pecuaria-content-right">
+        <h4>Economize tempo e aumente seus lucros com nosso software de gestão especial para pecuária. Todos os
+          indicadores no nosso módulo básico são para você tomar as decisões certas e melhorar sua fazenda inteira.</h4>
+        <div class="descricao">
+          <span>01.</span>
+          <div>
+            <h3>Adminitração e Manejo</h3>
+            <p>Manejo completo, quantidade de vacas produtivas, peso dos animais em diferentes fases da vida, prontuário
+              fácil de cada
+              animal, produção diária de IEP, nutrição animal, duração da lactação, situação financeira da fazenda,
+              estoque,
+              aparelhagem e veículos, controle e emissão de notas fiscais, controle e fiscalização dos funcionários,
+              entre
+              outras
+              funções.
+            </p>
+          </div>
+        </div>
+        <div class="descricao" data="special">
+          <span>02.</span>
+          <div>
+            <h3>Reprodução</h3>
+            <p>Aprimoramento genético, integração com maiores APIs do mercado para controle genético, taxa de prenhez,
+              concepção,
+              protocolos de reprodução, planejamento do controle reprodutivo, entre outras funções.
+            </p>
+          </div>
+        </div>
+        <div class="descricao">
+          <span>03.</span>
+          <div>
+            <h3>Sanidade</h3>
+            <p>Prontuário individual de cada animal, controle de doenças, evolução dos exames, protocolos de parto,
+              protocolos de
+              tratamentos, taxas de sobrevivência, calendário vacinal, agenda de eventos, lembretes de vacinação, entre
+              outras
+              funções.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <img src="../assets/img/sino.png" alt="Imagem de sino">
+        <p>Notificações com lembretes diários e um veterinário a sua disposição*</p>
+        <a href="/contato" target="_blank" rel="noopener noreferrer">Teste grátis</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pecuaria-beneficios" id="beneficio" data="special">
+    <div class="pecuaria-beneficios-content">
+      <h2>Aproveite os benefícios do sistema Lunazu Pecuária de Corte</h2>
+      <h2 id="lunazu-e-voce-pec">lunazu e você</h2>
+      <div class="beneficio1">
+        <div>
+          <h3>GERENCIE DE ONDE ESTIVER</h3>
+          <P>
+            Gerencie de onde estiver de forma online verificando em tempo real os relatórios, atividades, ações de
+            funcionários e
+            localização de maquinários*.
+          </P>
+        </div>
+        <div>
+          <h3>SEGURANÇA EM PRIMEIRO LUGAR</h3>
+          <p>
+            Um sistema super seguro para seus dados, onde você controla as ações e edições dos seus funcionários para
+            nada passar
+            batido, além de termos uma aba onde pode se acionar a polícia e já exportar os dados para facilitar a busca
+            do que foi
+            lesado. Também contamos com chips geolocalizadores para facilitar seu dia-dia
+          </p>
+        </div>
+      </div>
+      <div class="beneficio2">
+        <div>
+          <h3>SIMPLICIADE E PRATICIDADE</h3>
+          <p>
+            Começou a preencher uma sessão e alguém precisa de informação de outra? Temos abas dentro do sistema para
+            não precisar
+            voltar e conseguir gerenciar simultaneamente. Importe também planilhas e prontuários e preencha
+            automaticamente exames.
+            Facilite a gestão com toda a organização que nem planilhas te dão. Verificação individual de animais e
+            estatísticas.
+          </p>
+        </div>
+        <div>
+          <h3>O PLUS DOS OUTROS É NOSSO BÁSICO</h3>
+          <p>
+            Manejo inteligente e avançado, Reprodução, Genética e Nutrição são essenciais para toda fazenda e por isso
+            contamos com
+            eles no módulo básico e inicial. Emissão de notas fiscais também é necessária para todo produtor rural e por
+            isso
+            contamos com elas em nosso sistema.
+          </p>
+        </div>
+        <h4>*Localização disponível apenas nos planos Confort e acima ou comprados como módulo Security+</h4>
+      </div>
+      <div class="beneficio3">
+        <div>
+          <h3>Lunazu TECH+</h3>
+          <p>
+            Tenha a mais avançada tecnologia dentro da sua fazenda. Drones e aparelhos de ponta para facilitar seu
+            dia-a-dia e
+            automatizar sua produção. Racionalize o trabalho, melhore e diminua a mão de obra
+          </p>
+        </div>
+        <img src="../assets/img/drone-beneficio.jpg" alt="Imagem drone">
+        <a href="/contato">Saiba mais</a>
+      </div>
+      <div class="beneficio4">
+        <div>
+          <h3>Lunazu PRODUCTIVITY+</h3>
+          <p>
+            Tenha acesso a inúmeros relatórios feitos por profissionais consultores da área para te auxiliar nas
+            melhores decisões
+            para seu negócio. Conte com sugestões, análises de melhorias e produção, análise de mercado, mentorias, e
+            toda a
+            consultoria que pessoas reais podem te oferecer. Consulte nossos consultores para as melhores tomadas de
+            decisões.
+          </p>
+        </div>
+        <img src="../assets/img/vaca-beneficio.jpg" alt="Imagem drone">
+        <a href="/contato">Saiba mais</a>
+      </div>
+      <div class="beneficio5">
+        <div>
+          <h3>Lunazu HEALTH AND HELP+</h3>
+          <p>
+            Tenha um veterinário de prontidão para sua fazenda, para avaliar seus animais, consultá-los, verificar
+            moléstias e
+            exames, além de realizar melhorias nos procedimentos para melhorar a qualidade da sua produção e diminuir
+            abortos,
+            descartes e natimortos. Consultas onlines e prontidão de emergência também estão inclusos. Um produção
+            sustentável e
+            lucrativa.
+          </p>
+        </div>
+        <img src="../assets/img/veter-beneficios.jpg" alt="Imagem drone">
+        <a href="/contato">Saiba mais</a>
       </div>
     </div>
 
   </section>
+
+  <section class="pecuaria-planos" id="planos" data="special">
+    <div class="pecuaria-planos-content">
+      <div class="planos" id="basic">
+        <span class="fechar" onmousedown="ocultaBasic()">X</span>
+        <h2>Plano BASIC +</h2>
+        <h4>Quem busca resultado com o melhor preço do mercado</h4>
+        <div class="plano-basic-items">
+          <ul>
+            <li><img src="../assets/img/chec.png" alt="Incone"> Gestão do Rebanho e da produção de Leite</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Estoque, Administrativo e Financeiro</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Número de usuários ILIMITADO</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Número de fazendas personalizado</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Sem taxa de adesão no plano anual</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Sanidade e eventos veterinários com prontuário individual
+              de cada animal (pode também fazer upload de receitas e
+              prontuários veterinários)</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Reprodução e melhoramento genético</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Assistência 24 horas via WhatsApp, E-mail e Chat e
+              Treinamento Online</li>
+          </ul>
+          <ul style="height: 100%;">
+            <li><img src="../assets/img/chec.png" alt="Incone">Segurança dos dados e da fazenda com botões de reporte a
+              polícia militar</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Nutrição animal</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Manejo animal</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Alertas produtivos</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Emissão de notas fiscais</li>
+          </ul>
+          <div>
+            <h3>Gostou do plano, quer testar ou quer mais informações?</h3>
+            <a href="/contato" target="_blank" rel="noopener noreferrer">Fale conosco!</a>
+          </div>
+        </div>
+      </div>
+      <div class="planos" id="confort">
+        <span class="fechar" onmousedown="ocultaConfort()">X</span>
+        <h2>Plano Confort</h2>
+        <h4>Inovações e melhorias para quem quer um serviço personalizado</h4>
+        <div class="plano-confort-items">
+          <ul>
+            <li><img src="../assets/img/chec.png" alt="Incone">Gestão do Rebanho e da produção de leite</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Estoque, Administrativo e Financeiro com relatórios</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Número de usuários ILIMITADO</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Número de fazendas personalizado</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Sem taxa de adesão no plano anual</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Sanidade e eventos veterinários com prontuário individual
+              de cada
+              animal (pode também fazer upload de receitas e
+              prontuários veterinários)</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Reprodução e melhoramento genético</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Assistência 24 horas via WhatsApp, E-mail, Chat e
+              Telefone
+              e Treinamento Online e Presencial</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Nutrição animal com Estratégias de Dietas</li>
+          </ul>
+          <ul style="height: 100%;">
+            <li><img src="../assets/img/chec.png" alt="Incone">Segurança dos dados e da fazenda com botões de reporte a
+              polícia militar e chips para localização em tempo real de
+              maquinário e câmeras de segurança.</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Manejo animal com cálculos inteligentes</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Alertas produtivos e otimização de compra e venda</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Emissão de notas fiscais</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Veterinário para consultoria e melhoria dos
+              procedimentos,
+              com visita presencial e disponível em horário comercial para
+            <li><img src="../assets/img/chec.png" alt="Incone">Integração com qualquer API de monitoramento que
+              necessitar
+            </li>
+            emergências*.</li>
+          </ul>
+          <div>
+            <h3>Gostou do plano, quer testar ou quer mais informações?</h3>
+            <a href="/contato" target="_blank" rel="noopener noreferrer">Fale conosco!</a>
+          </div>
+          <p>*2 visitas presenciais de 2 horas cada a cada mês com relatórios e treinamentos para melhorias de manejo,
+            reprodução e parto</p>
+        </div>
+      </div>
+      <div class="planos" id="exclusive">
+        <span class="fechar" onmousedown="ocultaExclusive()">X</span>
+        <h2>Plano Exclusive</h2>
+        <h4>Para um grande aumento de produtividade e gestão tecnológica eficiente</h4>
+        <div class="plano-exclusive-items">
+          <ul>
+            <li><img src="../assets/img/chec.png" alt="Incone"> Gestão do Rebanho e da produção de Leite</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Estoque, Administrativo e Financeiro com relatórios</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Número de usuários ILIMITADO</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Número de fazendas personalizado</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Sem taxa de adesão no plano anual</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Sanidade e eventos veterinários com prontuário individual
+              de cada
+              animal (pode também fazer upload de receitas e
+              prontuários veterinários)</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Reprodução e melhoramento genético</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Assistência 24 horas via WhatsApp, E-mail e Chat e
+              Treinamento
+              Online e Presencial</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Nutrição animal e estrategia de dieta</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Manejo animal com cálculos e relatórios inteligentes</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Alertas produtivos e otimização de compra e venda</li>
+          </ul>
+          <ul style="height: 100%;">
+            <li><img src="../assets/img/chec.png" alt="Incone">Segurança dos dados e da fazenda com botões de reporte a
+              polícia militar e chips para localização em tempo real de
+              maquinário e câmeras de segurança.</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Emissão de notas fiscais</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Veterinário especialista para consultoria e melhoria dos
+              procedimentos, com visita presencial e disponível 24 horasl
+              para emergências*.</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Integração com qualquer API de monitoramento que
+              necessitar
+            </li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Consultores e Analistas reais com Lunazu Productivity +
+              com
+              relatórios semanais</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Drones, chips e brincos bovinos com Lunazu Tech+</li>
+            <li><img src="../assets/img/chec.png" alt="Incone">Assistência personalizada e qualquer implementação
+              necessária</li>
+          </ul>
+          <div>
+            <h3>Gostou do plano, quer testar ou quer mais informações?</h3>
+            <a href="/contato" target="_blank" rel="noopener noreferrer">Fale conosco!</a>
+          </div>
+          <p>*1 visita semanal com relatórios e treinamentos para a equipe para melhorias no manejo, reprodução e parto
+            e
+            problemas
+            na fazenda</p>
+        </div>
+      </div>
+      <div class="card-planos">
+        <div id="plano1" onmouseover="mostraBasic()">
+          <h3>Plano Basic+</h3>
+        </div>
+        <div id="plano2" onmouseover="mostraConfort()">
+          <h3>Plano Confort</h3>
+        </div>
+        <div id="plano3" onmouseover="mostraExclusive()">
+          <h3>Plano Exclusive</h3>
+        </div>
+      </div>
+      <div class="descricao-planos">
+        <h2>Modalidades diferentes para quem pensa diferente</h2>
+        <p>
+          Entendemos que sua necessidade é única e cada cliente é um caso em especial. Criamos 3 planos que podem ser
+          alterados
+          com base no que você precisa e na medida certa. Sua fazenda vale muito e sua produção é de suma importância e
+          contribui
+          para abastecimento da população brasileira. Nossos planos básicos contam com todo suporte para melhoramento
+          genético,
+          manejo e segurança que os outros aplicativos não oferecem como base. Nossos planos plus contam com consultoria
+          com
+          profissionais da área que irão participar ativamente da sua produção, chips de geolocalização para facilitar a
+          localizar
+          veículos e animais, brincos bovinos, drones e um veterinário disponível para sua fazenda te auxiliando com
+          melhorias.
+          São confortos reais para você não ter dor de cabeça.
+        </p>
+      </div>
+    </div>
+    <p id="venha-para-lunazu">O que está esperando? Venha para a LUNAZU!</p>
+  </section>
+
+  <section id="contato" class="contatos contato-pec">
+    <div class="container-contatos">
+      <div class="description js-scroll">
+        <p>Se interessou no teste gratuito ou ficou alguma dúvida? Fala com a gente!</p>
+        <p>Estamos aqui para te ajudar, então assim que nos enviar uma mensagem um dos nossos técnicos irá falar
+        diretamente com você.
+        </p>
+        <div class="urgencia">
+          <h3>Tem alguma urgência?</h3>
+          <a href="/contato" target="_blank" rel="noopener noreferrer">Fale agora com a gente</a>
+        </div>
+        <div class="social">
+          <h3>Confira nossas redes sociais!</h3>
+          <div class="img-icons">
+            <a href="https://wa.me/message/B4JJ4S6DPT4VD1" target="_blank" rel="noopener noreferrer"><img
+                src="../assets/img/facebook.png" alt="Incone instagram"></a>
+            <a href="https://wa.me/message/B4JJ4S6DPT4VD1" target="_blank" rel="noopener noreferrer"><img
+                src="../assets/img/tiktok.png" alt="Incone facebook"></a>
+            <a href="https://www.instagram.com/lunazuagropec/" target="_blank" rel="noopener noreferrer"><img
+                src="../assets/img/instagram.png" alt="Incone tiktok"></a>
+          </div>
+        </div>
+      </div>
+
+      <form action="../contato.php" method="POST" class="form js-scroll">
+        <img id="logo-footer" src="../assets/img/logo-branca.png" alt="Logo lunazu">
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br>
+        <input type="email" id="email" name="email" placeholder="Digite um email válido" required><br>
+        <input type="number" id="telefone" name="telefone" placeholder="Digite seu Telefone" required><br>
+        <textarea id="mensagem" name="mensagem" placeholder="Deixe sua mensagem" required></textarea><br>
+        <input type="submit" name="submit" id="submit" value="ENVIAR">
+      </form>
+
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="div-footer-1">
+      <div class="logo-footer2">
+        <a id="logo-footer2" href="https://www.lunazu.com/"><img src="../assets/img/logo-branca.png"
+            alt="Logo lunazu"></a>
+      </div>
+      <div class="incones-redes">
+        <a href="#" target="_blank" rel="noreferrer nooperner"><img src="../assets/img/linkedin.png" alt="Lnkedin"></a>
+        <a href="#" target="_blank" rel="noreferrer nooperner"><img src="../assets/img/tiktok.png" alt="Tiktok"></a>
+        <a href="#" target="_blank" rel="noreferrer nooperner"><img src="../assets/img/instagram.png"
+            alt="Instagram"></a>
+        <a href="#" target="_blank" rel="noreferrer nooperner"><img src="../assets/img/facebook.png" alt="Facebook"></a>
+        <a href="#" target="_blank" rel="noreferrer nooperner"><img src="../assets/img/twitter.png" alt="Twitter"></a>
+        <a href="#" target="_blank" rel="noreferrer nooperner"><img src="../assets/img/youtube.png" alt="Youtube"></a>
+      </div>
+
+      <p>&copy; 2023 - Lunazu - Desenvolvido por <a href="https://www.positiveempresarial.com.br"
+          target="_blank">Positive.Group</a></p>
+
+    </div>
+    <a style="position: absolute; right: 25px; top: 18px;" href="#topo">Retornar ao topo &#9650;</a>
+    <div class="div-footer-2">
+      <div class="div-footer-2-div1">
+        <div>
+          <h3>Serviços</h3>
+          <ul>
+            <li><a href="/pecuaria-leiteira">Pecuária Leiteira</a></li>
+            <li><a href="/pecuaria">Pecuária de corte</a></li>
+            <li><a href="/agricultura">Agricultura</a></li>
+            <li><a href="/personalizado">Sistemas Especiais</a></li>
+            <li><a href="https://pec.lunazu.com/">Área do Cliente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Institucional</h3>
+          <ul>
+            <li><a href="/quem-somos">Sobre Lunazu</a></li>
+            <li><a href="/termos-politica-privacidade" target="_blank" rel="noopener noreferrer">Política
+                de privacidade</a></li>
+            <li><a href="/termos-politica-privacidade" target="_blank" rel="noopener noreferrer">Termos
+                de serviço</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contatos</h3>
+          <ul>
+            <li>
+              <p>contato@lunazu.com</p>
+            </li>
+            <li>
+              <p>Av. Paulista, 1106, Andar 16 sala 01, 01.310-914 - Bela Vista, São Paulo - São Paulo</p>
+            </li>
+            <li><a href="https://wa.me/message/B4JJ4S6DPT4VD1" target="_blank" rel="noopener noreferrer">Chat
+                Whatsapp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="../js/script.js"></script>
 </body>

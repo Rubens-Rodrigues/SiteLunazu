@@ -1,31 +1,40 @@
 // Cores
-$verde: #5c8a71;
-$verde2: #156138;
 $fundo: #f4f8f6;
 $sinza: #4f4f4f;
 $amarelo: #ffd771;
 $branco: #fff;
 $preto: #000;
+$verde: #5c8a71;
+$verde2: #156138;
+$vermelha: #47100D;
+$vermelha2: #A04641;
+$roxo: #6540D9;
+$roxo2: #16223A;
 
 
 // Fontes
 
 @font-face {
-  font-family: 'Omega';
-  src: url('../assets/fontes/Omega+Sans+Regular.ttf') format("truetype"); 
+  font-family: "Omega";
+  src: url("../assets/fontes/Omega+Sans+Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'NexaLight';
-  src: url('../assets/fontes/NexaLight.otf') format("opentype");
+  font-family: "NexaLight";
+  src: url("../assets/fontes/NexaLight.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'NexaBold';
-  src: url('../assets/fontes/NexaBold.otf') format("opentype");
-   font-weight: bold; font-style: normal;
+  font-family: "NexaBold";
+  src: url("../assets/fontes/NexaBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
 }
 
-$nexaBold: 'NexaBold';
+$nexaBold: "NexaBold";
 $textos: "NexaLight";
-$titulos: 'Omega';
+$titulos: "Omega";

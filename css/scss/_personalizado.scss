@@ -1,0 +1,101 @@
+.personalizado-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../assets/img/fundo-sis-personalizado.jpg);
+  background-size: cover;
+  animation: animeBackground 50s ease-out alternate infinite;
+}
+
+.backdrop {
+  backdrop-filter: brightness(50%);
+}
+
+.personalizado-conteudo {
+  height: 100%;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 0 100px;
+  @media screen and(max-width: 1200px) {
+    padding: 40px;
+  }
+  @media screen and(max-width: 991px) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  @media screen and(max-width: 540px) {
+    padding: 10px;
+  }
+}
+
+.menus h4 {
+  position: fixed;
+  right: 30px;
+  top: 20em;
+  rotate: 90deg;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.personalizado-conteudo h4 {
+  font-size: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  width: 100%;
+  @media screen and(max-width: 991px) {
+    font-size: 40px;
+  }
+
+  @media screen and(max-width: 360px) {
+    font-size: 30px;
+  }
+}
+
+.personalizado-conteudo :nth-child(2) {
+  margin-top: -90px;
+  @media screen and(max-width: 991px) {
+    margin-top: -75px;
+  }
+  @media screen and(max-width: 500px) {
+    margin-top: -80px;
+  }
+  @media screen and(max-width: 350px) {
+    margin-top: -35px;
+  }
+}
+
+.personalizado-conteudo p {
+  font-size: 16px;
+  font-family: $titulos;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: justify;
+  width: 60%;
+  @media screen and(max-width: 991px) {
+    width: 100%;
+  }
+}
+
+#btn-personalizado {
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid $branco;
+  background: none;
+  color: $branco;
+  letter-spacing: 1px;
+  font-family: $nexaBold;
+  cursor: pointer;
+  transition: all 1s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+  }
+}

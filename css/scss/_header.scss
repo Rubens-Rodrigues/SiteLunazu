@@ -7,24 +7,15 @@ header {
   padding: 0 30px;
   color: $branco;
   z-index: 3;
+  @media screen and(max-width: 380px) {
+    padding: 0;
+  }
 }
 
-header .logo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header .logo {
+  padding-left: 10px;
 }
 
 .logo img {
-  width: 50px;
-}
-
-.logo a {
-  font-family: $titulos;
-  font-size: 2em;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 1px;
-  cursor: pointer;
-  z-index: 5;
+  width: 120px;
 }

@@ -5,16 +5,16 @@
   cursor: pointer;
   padding: 10px 30px 0 30px;
   height: 100vh;
-  border-left: 1px solid #555; 
- }
+  border-left: 1px solid #ccc;
+  z-index: 6;
+}
 
 .navBar div {
   width: 50px;
-  height: 1px;
+  height: 2px;
   background-color: $branco;
   margin: 9px;
   transition: 0.8s;
-  z-index: 5;
 }
 
 .navList {
@@ -24,7 +24,7 @@
   width: 55vw;
   height: 99vh;
   background-color: rgba(14, 13, 13, 0.89);
-  z-index: 3;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,9 +47,16 @@
   padding: 0 50px 0 0;
   z-index: 2;
   text-align: left;
-  border-right: 1px solid #555;
+  border-right: 1px solid #ccc;
 }
 
+.nav-List ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-left: 40px;
+}
 
 .nav-List ul {
   height: 100vh;
@@ -57,39 +64,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 50px;
   gap: 10px;
+  position: relative;
 }
 
 .nav-List ul a,
 .navList ul a {
-  position: relative;
   letter-spacing: 0.1rem;
-  font-family: $titulos;
+  font-family: $nexaBold;
+  font-style: normal;
   opacity: 0.7;
   transition: all 0.5s;
   color: $branco;
-  font-size: 16px;
+  font-size: 18px;
+  padding-left: 7px;
   &:hover {
     opacity: 1;
   }
 }
 
-.line{
-  width: 100%;
+.line {
+  width: 40px;
   height: 2px;
   background-color: $branco;
   position: absolute;
-  display: inline-block;
-  bottom: -1px;
   left: 0;
-  opacity: 0.7;
-  transform:  scaleX(0);
-  transform-origin: left;
-  transition:  transform 0.5s;
+  opacity: 0.5;
+  transform: scaleX(50%);
+  transform-origin: right;
+  transition: transform 0.5s;
 }
-.navList li:hover .line,
-.nav-List li:hover .line{
+
+.nav-List li:hover .line {
   transform: scaleX(1);
   opacity: 1;
 }
@@ -104,36 +110,32 @@
 }
 
 .lang button {
-  width: 26px;
-  height: 16px;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   background: none;
   border: none;
   cursor: pointer;
-  opacity: .6;
-  padding-bottom: 20px;
-  &:hover{
+  opacity: 0.6;
+  &:hover {
     opacity: 1;
   }
-  &:focus{
+  &:focus {
     border-bottom: 1px solid #fff;
   }
 }
 
-
 @media screen and (max-width: 991px) {
   .nav-List li {
     margin-left: 0;
-    opacity: 0;
   }
 
   .nav-List {
     z-index: 0;
     border: none;
+    display: none;
   }
 
-  .navBar{
+  .navBar {
     border: none;
     height: auto;
   }
@@ -144,11 +146,11 @@
   transform: translateX(0);
 }
 .navBar.active .line1 {
-  transform: rotate(-50deg) translate(-8px, 8px);
+  transform: rotate(-50deg) translate(-8px, 7px);
 }
 .navBar.active .line2 {
   opacity: 0;
 }
 .navBar.active .line3 {
-  transform: rotate(50deg) translate(-4px, -5px);
+  transform: rotate(50deg) translate(-7px, -7px);
 }

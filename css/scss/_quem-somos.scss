@@ -1,0 +1,242 @@
+.quem-somos-topo {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../assets/img/fundo-quem-somos.jpg);
+  background-size: cover;
+  animation: animeBackground 50s ease-out alternate infinite;
+}
+
+.backdrop {
+  backdrop-filter: brightness(50%);
+}
+
+.quem-somos-conteudo-topo {
+  height: 100%;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 100px;
+  @media screen and(max-width: 1200px) {
+    padding: 40px;
+  }
+  @media screen and(max-width: 991px) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  @media screen and(max-width: 540px) {
+    padding: 0;
+  }
+}
+
+.menus h4 {
+  position: fixed;
+  right: 30px;
+  top: 20em;
+  rotate: 90deg;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.quem-somos-conteudo-topo h1 {
+  font-size: 85px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  @media screen and(max-width: 500px) {
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 400px) {
+    font-size: 70px;
+  }
+}
+
+.quem-somos-conteudo-topo h3 {
+  color: $branco;
+  font-size: 25px;
+  font-family: $titulos;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: right;
+  @media screen and(max-width: 480px) {
+    text-align: center;
+  }
+  @media screen and(max-width: 400px) {
+    font-size: 20px;
+  }
+}
+
+#btn-quem-somos {
+  text-align: center;
+  margin-top: 100px;
+  padding: 5px 30px;
+  border-radius: 20px;
+  border: 1px solid $branco;
+  background: none;
+  color: $branco;
+  letter-spacing: 1px;
+  font-family: $nexaBold;
+  cursor: pointer;
+  transition: all 1s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+  }
+}
+
+.quem-somos-conteudo {
+  height: 100%;
+  width: 70%;
+  margin: 0 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @media screen and(max-width: 991px) {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 600px) {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+.quem-somos-conteudo .div1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 1px;
+    height: 70%;
+    background-color: rgba($color: $verde2, $alpha: 0.45);
+    @media screen and(max-width: 430px) {
+      left: 35%;
+    }
+  }
+  @media screen and(max-width: 600px) {
+    padding: 50px 0;
+    justify-content: space-between;
+  }
+}
+
+.quem-somos-conteudo .div1 img {
+  width: 200px;
+  @media screen and(max-width: 600px) {
+    width: 100px;
+  }
+}
+
+.quem-somos-conteudo .div1 h3 {
+  display: flex;
+  align-items: center;
+  color: $preto;
+  font-family: $nexaBold;
+  width: 300px;
+  font-size: 24px;
+  @media screen and(max-width: 600px) {
+    font-size: 16px;
+    width: 200px;
+  }
+}
+
+.quem-somos-conteudo .div2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  @media screen and(max-width: 600px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.quem-somos-conteudo .div2 p {
+  width: 60%;
+  color: $preto;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-family: $titulos;
+  text-align: justify;
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.quem-somos-conteudo .div2 img {
+  width: 500px;
+}
+
+#texto-quem-somos {
+  color: $preto;
+  padding: 100px 40px;
+  font-size: 18px;
+  font-family: $titulos;
+  text-align: justify;
+  @media screen and(max-width: 600px) {
+    padding: 50px 10px;
+  }
+}
+
+
+.quem-somos-conteudo .div3 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  @media screen and(max-width: 600px) {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+}
+
+.quem-somos-conteudo .div3 p {
+  width: 60%;
+  color: $preto;
+  font-size: 18px;
+  font-family: $titulos;
+  text-align: justify;
+  padding: 20px 30px;
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.quem-somos-conteudo .div3 img {
+  width: 500px;
+}
+
+
+.quem-somos-conteudo .div3 h3 {
+  position: absolute;
+  bottom: 25px;
+  right: 15%;
+  width: 300px;
+  color: $verde2;
+  text-decoration: underline;
+  @media screen and(max-width: 768px) {
+    width: 100%;
+    right: 0;
+  }
+  @media screen and(max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.contato-quem-somos {
+  background-color: #1e1e1e !important;
+  background-image: none;
+}

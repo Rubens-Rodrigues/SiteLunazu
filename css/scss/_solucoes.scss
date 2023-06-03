@@ -11,17 +11,21 @@
 }
 
 .content-solucoes {
+  background-image: url(../assets/img/fundo-solucoes.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 100%;
   width: 74%;
   height: 100vh;
   min-height: 100vh;
   margin-right: -6rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   @media screen and (max-width: 600px) {
     flex-direction: column;
     padding: 0;
     height: 100%;
+    background-position: 90% -10%;
   }
 }
 
@@ -31,7 +35,7 @@
   justify-content: center;
   width: 40%;
   height: 100%;
-  padding: 60px;
+  padding: 20px;
   z-index: 1;
   @media screen and (max-width: 991px) {
     width: 60%;
@@ -46,7 +50,7 @@
 
 .solucoes-description h4 {
   color: $preto;
-  font-size: 20px;
+  font-size: 30px;
   font-family: $nexaBold;
 }
 
@@ -60,47 +64,10 @@
   }
 }
 
-.solucoes-img {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../assets/img/fundo-solucoes.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  @media screen and (max-width: 991px) {
-    width: 40%;
-  }
-  @media screen and (max-width: 600px) {
-    width: 100vw;
-    border-radius: 0;
-
-  }
-}
-
-.content-solucoes img{
-  width: 300px;
-}
-
-#gestao-inteligente {
-  color: $branco;
-  font-size: 60px;
-  position: absolute;
-  font-family: $nexaBold !important;
-  left: 37%;
-  top: 45%;
-  @media screen and(max-width: 991px) {
-    display: none;
-  }
-}
-
 
 @media screen and (max-width: 991px) {
   .content-solucoes {
     width: 90vw;
     margin: 10px 0;
   }
-
 }
-

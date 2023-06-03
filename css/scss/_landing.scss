@@ -1,0 +1,188 @@
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/img/fundo-landing.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+  @media screen and(max-width: 800px) {
+    flex-direction: column;
+    height: auto;
+    background-position: 30%;
+  }
+}
+
+.landing .logo {
+  width: 120px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.landing-descricao {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media screen and(max-width: 991px) {
+    padding: 10px;
+  }
+  @media screen and(max-width: 800px) {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 50px;
+  }
+  @media screen and(max-width: 580px) {
+    width: 100%;
+    padding: 50px 10px;
+  }
+}
+
+.landing-descricao h1 {
+  font-size: 40px;
+  font-family: $nexaBold;
+  @media screen and(max-width: 800px) {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}
+
+.landing-descricao h3 {
+  color: $branco;
+  letter-spacing: 1px;
+  @media screen and(max-width: 800px) {
+    margin-top: 20px;
+  }
+}
+
+.landing-descricao p {
+  font-size: 18px;
+}
+
+.landing-descricao h4 {
+  margin-top: -40px;
+  a {
+    text-decoration: underline;
+  }
+  @media screen and(max-width: 800px) {
+    margin: 0;
+  }
+}
+
+.landing-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  @media screen and(max-width: 800px) {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 0;
+    border-radius: 30% 0 0 0;
+  }
+  @media screen and(max-width: 580px) {
+    border-radius: 0;
+    padding: 10px;
+  }
+}
+
+.landing-form h3 {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  color: $branco;
+  font-family: $titulos !important;
+  letter-spacing: 1px;
+  font-size: 16px;
+  a{
+    text-decoration: underline;
+  }
+  @media screen and(max-width: 420px) {
+    right: 10px;
+    font-size: 14px;
+  }
+}
+
+.landing-form h4 {
+  font-family: $nexaBold;
+  font-size: 20px;
+  text-align: center;
+  @media screen and(max-width: 800px) {
+    margin-top: 20px;
+  }
+}
+
+.landing-form form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    color: $preto;
+  }
+  @media screen and(max-width: 580px) {
+    width: 100%;
+  }
+}
+
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.landing-form p {
+  font-size: 14px;
+}
+
+.checkbox-group label {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+
+.checkbox-group label:last-child {
+  margin-right: 0;
+}
+
+#required {
+  font-size: 12px;
+}
+
+button[type="submit"] {
+  background-color: transparent;
+  color: white;
+  padding: 8px 20px;
+  border: 1px solid $branco;
+  border-radius: 30px;
+  margin-top: 10px;
+  float: right;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccc;
+    color: $preto;
+  }
+}
+

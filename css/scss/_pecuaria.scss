@@ -1,177 +1,996 @@
-header .logo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo img {
-  width: 50px;
-}
-
-.logo h1 {
-  color: $sinza;
-  font-family: $titulos;
-  font-size: 2em;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
-
-
-#a1 {
+.pecuaria-topo {
   position: relative;
-  display: inline-block;
-  color: $sinza;
-  opacity: 0.7;
-  &:hover {
-    opacity: 1;
-  }
-}
-
-.nav-List h2 {
-  color: $sinza;
-  rotate: -90deg;
-  padding: 50% 0;
-  letter-spacing: 2px;
-  margin-top: 10em;
-}
-
-.pecuaria-container {
   height: 100%;
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
-  margin: 0 190px;
+  background-image: url(../assets/img/fundo-pecuaria.jpg);
+  background-size: cover;
+  animation: animeBackground 50s alternate infinite;
+}
+
+.backdrop {
+  backdrop-filter: brightness(50%);
+}
+
+.pecuaria-conteudo {
+  height: 100%;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 0 100px 0 300px;
+  @media screen and(max-width: 1200px) {
+    padding: 40px;
+  }
+  @media screen and(max-width: 991px) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  @media screen and(max-width: 540px) {
+    padding: 10px;
+  }
+}
+
+.menus h4 {
+  position: fixed;
+  right: 30px;
+  top: 20em;
+  rotate: 90deg;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+.pecuaria-conteudo h4 {
+  font-size: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  width: 80%;
+  letter-spacing: 5px;
+  @media screen and(max-width: 991px) {
+    width: 100%;
+    font-size: 60px;
+  }
+  @media screen and(max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and(max-width: 360px) {
+    font-size: 30px;
+  }
+}
+
+.pecuaria-conteudo :nth-child(2) {
+  margin-top: -90px;
+  letter-spacing: 7px;
+  @media screen and(max-width: 991px) {
+    margin-top: -75px;
+  }
+  @media screen and(max-width: 500px) {
+    margin-top: -100px;
+  }
+  @media screen and(max-width: 410px) {
+    margin-top: -70px;
+  }
+  @media screen and(max-width: 350px) {
+    margin-top: -30px;
+  }
+}
+
+.pecuaria-conteudo p {
+  font-size: 16px;
+  font-family: $titulos;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: justify;
+  width: 80%;
+  @media screen and(max-width: 991px) {
+    width: 100%;
+  }
+}
+
+#btn-pecuaria {
+  text-align: center;
+  width: 160px;
+  padding: 0.6em;
+  border-radius: 20px;
+  border: 1px solid $branco;
+  background: none;
+  color: $branco;
+  letter-spacing: 1px;
+  font-family: $nexaBold;
+  cursor: pointer;
+  transition: all 1s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+  }
+}
+
+.pecuaria-solucoes {
+  background-color: #FFF0E0;
   padding-bottom: 50px;
-  @media screen and (max-width: 991px) {
-    width: 100vw;
-    margin: 0;
-  }
+  padding-top: 80px;
 }
 
-.pecuaria-descricao {
+.pecuaria-solucoes-content {
+  height: 100%;
+  width: 70%;
+  min-height: 110vh;
+  margin: 0 0 0 250px;
+  padding-bottom: 100px;
   display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  height: 60%;
-    @media screen and (max-width: 768px) {
+  position: relative;
+  &::after {
+    content: "*Somente em planos selecionados";
+    position: absolute;
+    color: $preto;
+    right: 5px;
+    bottom: 0;
+    font-size: 12px;
+  }
+  @media screen and(max-width: 991px) {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 768px) {
     flex-direction: column;
-    align-items: center;
-    height: 5%;
-    padding-top: 20px;
-  }
-  h2 {
-    width: 50%;
-    color: $verde;
-    font-size: 2rem;
-    text-align: center;
-    padding: 30px;
-    @media screen and (max-width: 768px){
-      width: 100%;
-      font-size: 1.5rem;
-      padding-bottom: 0;
-    }
-  }
-  p {
-    width: 45%;
-    font-size: 1.3rem;
-    padding: 20px;
-    @media screen and (max-width: 768px){
-      width: 100%;
-      font-size: 1rem;
-      padding: 30px;
-    }
   }
 }
 
-.pecuaria-items {
+.pecuaria-content-left p,
+.pecuaria-content-right p {
+  color: $preto;
+  font-style: normal;
+}
+
+.pecuaria-content-left {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
-  flex-wrap: wrap;
-  .pecuaria-item {
-    border: 1px solid $sinza;
-    border-radius: 10px;
-    padding: 20px;
-    width: 240px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  justify-content: space-around;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 1px;
+    height: 90%;
+    background-color: #ccc;
+  }
+  @media screen and(max-width: 768px) {
     justify-content: space-evenly;
-    text-align: center;
-    position: relative;
-    cursor: default;
-    @media screen and (max-width: 1300px){
-     width: 350px;
-    }
-    @media screen and (max-width: 600px){
-      width: 90vw;
-      height: 150px;
-    }
-    h3 {
-      padding-bottom: 10px;
-      font-size: 1.5rem;
-      color: $sinza;
-    }
-    &:hover {
-      background-color: $verde;
-      box-shadow: 1px 1px 10px 1px ($preto);
-    }
+    min-height: auto;
+    padding-top: 20px;
   }
 }
 
-.pecuaria-item:hover span {
-  color: $branco;
-  background-color: rgba(128, 128, 128, 0.849);
-}
-.pecuaria-item:hover p,
-.pecuaria-item:hover h3 {
-  color: $branco;
-}
-
-.pecuaria-item span {
-  color: $sinza;
-  font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 30px;
-  border: 2px solid $sinza;
-  border-radius: 8px;
-  position: absolute;
-  left: -10px;
-  top: 15px;
+.pecuaria-content-left p {
+  width: 70%;
+  font-size: 30px;
+  font-family: $nexaBold;
+  @media screen and(max-width: 768px) {
+    text-align: center;
+  }
+  @media screen and(max-width: 520px) {
+    width: 100%;
+    font-size: 20px;
+  }
 }
 
-.pecuaria-header .line{
+.pecuaria-content-left img {
+  width: 275px;
+  @media screen and(max-width: 520px) {
+    width: 200px;
+  }
+}
+
+.pecuaria-content-right {
   width: 100%;
-  height: 2px;
-  background-color: $sinza;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0 10px;
+  color: $preto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and(max-width: 768px) {
+    padding: 40px;
+    justify-content: space-evenly;
+  }
+  @media screen and(max-width: 520px) {
+    padding: 0;
+  }
+}
+
+.pecuaria-content-right h4 {
+  font-size: 16px;
+  font-family: $titulos;
+  font-style: normal;
+  width: 80%;
+  color: $preto;
+  @media screen and(max-width: 768px) {
+    text-align: center;
+  }
+  @media screen and(max-width: 520px) {
+    font-size: 14px;
+    width: 90%;
+  }
+}
+
+.pecuaria-content-right .descricao {
+  display: flex;
+  position: relative;
+}
+
+
+.pecuaria-content-right .descricao > div {
+  width: 90%;
+  padding: 0 0 20px 40px;
+  @media screen and(max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and(max-width: 500px) {
+    padding: 0 0 0 10px;
+  }
+}
+
+.pecuaria-content-right .descricao span {
+  color: $vermelha;
+  font-size: 50px;
+  font-family: $nexaBold;
+  font-style: normal;
+  padding: 10px;
+  @media screen and(max-width: 520px) {
+    font-size: 30px;
+    padding: 5px;
+  }
+}
+
+.pecuaria-content-right .descricao h3 {
+  color: $vermelha;
+  font-family: $nexaBold;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.pecuaria-content-right .descricao p {
+  font-size: 12px;
+  font-family: $titulos;
+  font-style: normal;
+}
+
+.pecuaria-solucoes-content .alert {
   position: absolute;
-  display: inline-block;
-  bottom: -8px;
-  left: -10px;
-  opacity: 0.7;
-  transform:  scaleX(0);
-  transform-origin: left;
-  transition:  transform 0.5s;
-}
-.pecuaria-header h3:hover .line{
-  transform: scaleX(1);
-  opacity: 1;
+  width: 100%;
+  height: 80px;
+  bottom: 20px;
+  background-color: $vermelha;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and(max-width: 768px) {
+    text-align: center;
+  }
+  @media screen and(max-width: 520px) {
+    justify-content: center;
+    padding: 0 10px 30px 10px;
+    height: auto;
+  }
 }
 
+.alert p {
+  font-family: $nexaBold;
+  font-style: normal;
+  letter-spacing: 1px;
+  @media screen and(max-width: 768px) {
+    font-size: 12px;
+  }
+}
 
-@media  (max-width: 991px) {
-  .pec-h2 {
+.pecuaria-solucoes-content .alert a {
+  background-color: $fundo;
+  color: $vermelha;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: $nexaBold;
+  font-style: normal;
+  &:hover {
+    color: $branco;
+    border: 1px solid $branco;
+    background: transparent;
+  }
+  @media screen and(max-width: 768px) {
+    font-size: 12px;
+    padding: 5px;
+  }
+  @media screen and(max-width: 520px) {
+    width: 30%;
+    position: absolute;
+    bottom: 5px;
+    left: 35%;
+  }
+}
+
+.pecuaria-solucoes-content .alert img {
+  width: 50px;
+  padding: 10px;
+  background-color: $vermelha2;
+  border-radius: 50%;
+  @media screen and(max-width: 520px) {
+    margin-top: 25px;
+  }
+}
+
+.pecuaria-beneficios {
+  min-height: 100vh;
+  background-color: #FFF0E0;
+}
+
+.pecuaria-beneficios-content {
+  height: 100%;
+  width: 70%;
+  margin: 0 0 50px 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  @media screen and(max-width: 991px) {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+#lunazu-e-voce-pec {
+  color: $branco;
+  font-size: 70px;
+  position: absolute;
+  font-family: $nexaBold !important;
+  left: 25%;
+  top: 20%;
+  @media screen and(max-width: 991px) {
     display: none;
   }
+}
+
+.pecuaria-beneficios-content h2,
+h3 {
+  font-family: $nexaBold;
+  color: $preto;
+  font-style: normal;
+}
+
+.pecuaria-beneficios h2 {
+  font-size: 30px;
+  width: 50%;
+  @media screen and(max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
+  @media screen and(max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+.pecuaria-beneficios-content p {
+  color: $preto;
+}
+
+.beneficio1 p,
+.beneficio2 p,
+.beneficio3 p,
+.beneficio4 p,
+.beneficio5 p {
+  font-style: normal;
+}
+
+.beneficio1 h3,
+.beneficio2 h3 {
+  font-size: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(123, 255, 0, 0.37);
+  @media screen and(max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+.beneficio1 p,
+.beneficio2 p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.pecuaria-beneficios-content .beneficio1 {
+  display: flex;
+  padding: 20px;
+  gap: 30px;
+  @media screen and(max-width: 768px) {
+    justify-content: center;
+    padding: 0;
+  }
+  @media screen and(max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.pecuaria-beneficios-content .beneficio2 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 40px 20px;
+  gap: 30px;
+  position: relative;
+  @media screen and(max-width: 768px) {
+    justify-content: center;
+    padding: 0 0 40px 0;
+  }
+  @media screen and(max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.beneficio2 h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  color: $preto;
+  @media screen and(max-width: 480px) {
+    font-size: 10px;
+  }
+}
+
+.beneficio1 > div,
+.beneficio2 > div {
+  width: 40%;
+  @media screen and(max-width: 768px) {
+    width: 50%;
+  }
+  @media screen and(max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.beneficio3 {
+  display: flex;
+  gap: 50px;
+  padding: 50px 50px 10px 50px;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width: 650px) {
+    gap: 0;
+    padding: 30px 0;
+  }
+  @media screen and(max-width: 460px) {
+    flex-direction: column-reverse;
+    h3 {
+      margin-top: 10px;
+    }
+  }
+}
+
+.pecuaria-beneficios-content .beneficio3 h3,
+.pecuaria-beneficios-content .beneficio4 h3,
+.pecuaria-beneficios-content .beneficio5 h3 {
+  color: $vermelha;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.beneficio3 > div,
+.beneficio4 > div,
+.beneficio5 > div {
+  width: 50%;
+  @media screen and(max-width: 650px) {
+    width: 70%;
+  }
+  @media screen and(max-width: 460px) {
+    width: 90%;
+  }
+}
+
+.beneficio4 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  padding: 10px 50px;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width: 650px) {
+    gap: 20px;
+    padding: 30px 0;
+  }
+  @media screen and(max-width: 460px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.beneficio5 {
+  display: flex;
+  gap: 50px;
+  padding: 20px 50px;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and(max-width: 650px) {
+    gap: 10px;
+    padding: 30px 0;
+  }
+  @media screen and(max-width: 460px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.beneficio3 img,
+.beneficio4 img,
+.beneficio5 img {
+  width: 350px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.beneficio3 a,
+.beneficio4 a,
+.beneficio5 a {
+  color: $preto;
+  position: absolute;
+  bottom: 0;
+  font-style: normal;
+  font-family: $nexaBold;
+  border-bottom: 1px solid $preto;
+  font-size: 14px;
+  @media screen and(max-width: 460px) {
+    right: 0;
+  }
+}
+
+.pecuaria-planos {
+  height: 100%;
+  background-color: #FFF0E0;
+}
+
+.pecuaria-planos-content {
+  height: 100%;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 0 50px 250px;
+  padding: 50px;
+  display: flex;
+  position: relative;
+  @media screen and(max-width: 991px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+  }
+  @media screen and(max-width: 580px) {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 20px 0 20px 0;
+  }
+}
+
+.descricao-planos {
+  width: 60%;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  font-style: normal;
+  @media screen and(max-width: 768px) {
+    padding: 0 30px;
+  }
+  @media screen and(max-width: 680px) {
+    padding: 0 10px;
+  }
+  @media screen and(max-width: 580px) {
+    width: 90%;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+}
+
+.descricao-planos h2 {
+  color: $preto;
+  font-family: $nexaBold;
+  @media screen and(max-width: 580px) {
+    text-align: center;
+  }
+}
+
+.descricao-planos p {
+  font-family: $titulos;
+  color: $preto;
+  font-size: 14px;
+}
+
+.card-planos {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  @media screen and(max-width: 580px) {
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
+
+.card-planos > div {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  @media screen and(max-width: 580px) {
+    width: 80%;
+  }
+}
+
+.card-planos h3 {
+  color: $branco;
+  font-family: $nexaBold;
+}
+
+.pecuaria-planos #plano1 {
+  background-image: url(../assets/img/pec-plano-basic.png);
+  background-size: cover;
+}
+.pecuaria-planos #plano2 {
+  background-image: url(../assets/img/pec-plano-confort.png);
+  background-size: cover;
+}
+.pecuaria-planos #plano3 {
+  background-image: url(../assets/img/pec-plano-exclusive.png);
+  background-size: cover;
+}
+
+.planos {
+  position: absolute;
+  width: 90%;
+  height: 83%;
+  display: none;
+  font-style: normal;
+  z-index: 9;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b9;
+    z-index: -1;
+  }
+  @media screen and(max-width: 991px) {
+    width: 98%;
+    height: 95%;
+    left: 1%;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 660px) {
+    height: 100vh;
+  }
+
+  @media screen and(max-width: 500px) {
+    height: 100%;
+  }
+}
+
+.fechar {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 30px;
+  font-family: $nexaBold;
+  cursor: pointer;
+  z-index: 9 !important;
+}
+
+.pecuaria-planos #basic {
+  background-image: url(../assets/img/pec-plano-basic.png);
+  background-size: cover;
+  padding: 30px;
+  display: none;
+  @media screen and(max-width: 660px) {
+    padding-top: 50px;
+  }
+  @media screen and(max-width: 500px) {
+    height: auto;
+    padding-bottom: 250px;
+  }
+}
+
+.pecuaria-planos #confort {
+  background-image: url(../assets/img/pec-plano-confort.png);
+  background-size: cover;
+  padding: 25px;
+  display: none;
+  @media screen and(max-width: 500px) {
+    height: auto;
+    padding-bottom: 200px;
+  }
+}
+
+.pecuaria-planos #exclusive {
+  background-image: url(../assets/img/pec-plano-exclusive.png);
+  background-size: cover;
+  padding: 25px;
+  display: none;
+  @media screen and(max-width: 660px) {
+    padding: 25px 0 25px 10px;
+  }
+}
+
+.plano-basic-items img,
+.plano-confort-items img,
+.plano-exclusive-items img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  @media screen and(max-width: 660px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+#basic h2,
+#confort h2,
+#exclusive h2 {
+  font-size: 26px;
+  font-family: $nexaBold;
+  padding-left: 20px;
+  @media screen and(max-width: 660px) {
+    font-size: 20px;
+  }
+}
+
+#basic h4,
+#confort h4,
+#exclusive h4 {
+  letter-spacing: 1px;
+  padding-left: 20px;
+  @media screen and(max-width: 660px) {
+    font-size: 16px;
+  }
+}
+
+.plano-basic-items,
+.plano-confort-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  @media screen and(max-width: 660px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.plano-exclusive-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  @media screen and(max-width: 660px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.plano-basic-items ul,
+.plano-confort-items ul,
+.plano-exclusive-items ul {
+  width: 50%;
+  @media screen and(max-width: 660px) {
+    width: 100%;
+  }
+}
+
+.plano-basic-items ul li,
+.plano-confort-items ul li,
+.plano-exclusive-items ul li {
+  padding: 3px;
+  font-size: 14px;
+  padding: 12px 0 0 25px;
+  position: relative;
+  font-family: $titulos;
+  font-style: normal;
+  font-weight: 400;
+  @media screen and(max-width: 660px) {
+    font-size: 12px;
+  }
+}
+
+.plano-basic-items > div {
+  position: absolute;
+  bottom: 80px;
+  right: 70px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $branco;
+  }
+  a {
+    border: 1px solid $branco;
+    padding: 7px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: $nexaBold;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+  }
+  @media screen and(max-width: 660px) {
+    right: 0;
+    bottom: 20px;
+  }
+  @media screen and(max-width: 500px) {
+    bottom: 100px;
+    right: 10%;
+    text-align: center;
+  }
+}
+
+.plano-confort-items > div {
+  position: absolute;
+  bottom: 25px;
+  right: 70px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $branco;
+    font-size: 16px;
+    @media screen and(max-width: 660px) {
+      font-size: 14px;
+    }
+  }
+  a {
+    border: 1px solid $branco;
+    padding: 5px 25px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: $nexaBold;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+    @media screen and(max-width: 660px) {
+      font-size: 14px;
+    }
+  }
+  @media screen and(max-width: 660px) {
+    right: 0px;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    @media screen and(max-width: 500px) {
+      bottom: 100px;
+    }
+  }
+}
+
+.plano-exclusive-items > div {
+  position: absolute;
+  bottom: 25px;
+  right: 70px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: $branco;
+    font-size: 14px;
+    @media screen and(max-width: 660px) {
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+  a {
+    border: 1px solid $branco;
+    padding: 4px 20px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-family: $nexaBold;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+    @media screen and(max-width: 660px) {
+      font-size: 12px;
+    }
+  }
+  @media screen and(max-width: 660px) {
+    right: 0px;
+    bottom: 20px;
+    align-items: flex-end;
+    padding-right: 5px;
+  }
+  @media screen and(max-width: 500px) {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    align-items: center;
+    bottom: 100px;
+  }
+}
+
+.plano-confort-items p,
+.plano-exclusive-items p {
+  font-size: 9px;
+  letter-spacing: 1px;
+  font-family: $titulos;
+  left: 15px;
+  bottom: 3px;
+  position: absolute;
+  @media screen and(max-width: 660px) {
+    font-size: 7px;
+    bottom: 10px;
+  }
+}
+
+#venha-para-lunazu {
+  color: $preto;
+  text-align: center;
+  font-size: 30px;
+  font-family: $nexaBold;
+  font-style: normal;
+  margin-bottom: 100px;
+  @media screen and(max-width: 660px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.urgencia {
+  width: 75%;
+  text-align: center;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h3 {
+    color: $branco;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  a {
+    border: 1px solid $branco;
+    border-radius: 20px;
+    font-size: 14px;
+    font-style: normal;
+    padding: 3px 15px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.contato-pec {
+  background-color: #1e1e1e !important;
+  background-image: none;
 }
